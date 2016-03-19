@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C3BA7689BCBF59D716ACE3D /* Pods_Cleverdiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD2CAD5EDBD3E2DC69F2F65 /* Pods_Cleverdiet.framework */; };
+		82333F121C9181CF008413BF /* CaloricalNeedsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82333F111C9181CF008413BF /* CaloricalNeedsCalculator.swift */; };
+		82333F161C918901008413BF /* DietGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82333F151C918901008413BF /* DietGenerator.swift */; };
+		823AC99B1C90464400AC4257 /* DietDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AC99A1C90464400AC4257 /* DietDataLoader.swift */; };
+		823AC99E1C905DDC00AC4257 /* MyDietsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AC99D1C905DDC00AC4257 /* MyDietsViewController.swift */; };
+		823AC9A01C90617300AC4257 /* MyDietCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AC99F1C90617300AC4257 /* MyDietCellTableViewCell.swift */; };
+		824AFC021C8F7A7500A12A43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC011C8F7A7500A12A43 /* AppDelegate.swift */; };
+		824AFC041C8F7A7500A12A43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC031C8F7A7500A12A43 /* ViewController.swift */; };
+		824AFC071C8F7A7500A12A43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824AFC051C8F7A7500A12A43 /* Main.storyboard */; };
+		824AFC091C8F7A7500A12A43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 824AFC081C8F7A7500A12A43 /* Assets.xcassets */; };
+		824AFC0C1C8F7A7500A12A43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 824AFC0A1C8F7A7500A12A43 /* LaunchScreen.storyboard */; };
+		824AFC1B1C8F80DA00A12A43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC1A1C8F80DA00A12A43 /* User.swift */; };
+		824AFC1E1C8F821100A12A43 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC1D1C8F821100A12A43 /* Food.swift */; };
+		824AFC201C8F844100A12A43 /* Diet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC1F1C8F844100A12A43 /* Diet.swift */; };
+		824AFC221C8F860B00A12A43 /* Food.cdata in Resources */ = {isa = PBXBuildFile; fileRef = 824AFC211C8F860B00A12A43 /* Food.cdata */; };
+		824AFC241C8F872900A12A43 /* Diet.cdata in Resources */ = {isa = PBXBuildFile; fileRef = 824AFC231C8F872900A12A43 /* Diet.cdata */; };
+		824AFC2A1C8F87F700A12A43 /* UserDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC291C8F87F700A12A43 /* UserDataLoader.swift */; };
+		824AFC2E1C8F8D3900A12A43 /* FoodDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */; };
+		82D26F1F1C90864A002DF5EE /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26F1E1C90864A002DF5EE /* DietViewController.swift */; };
+		82D26F211C908692002DF5EE /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26F201C908692002DF5EE /* FoodTableViewCell.swift */; };
+		82F715F11C9371340013ED4A /* DailyNutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F01C9371340013ED4A /* DailyNutritionData.swift */; };
+		82F715F31C945CD80013ED4A /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F21C945CD80013ED4A /* Int.swift */; };
+		82F715F61C9462C90013ED4A /* XMLSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F51C9462C90013ED4A /* XMLSerializable.swift */; };
+		82F715F81C948C2C0013ED4A /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F71C948C2C0013ED4A /* CreateAccountViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2CD2CAD5EDBD3E2DC69F2F65 /* Pods_Cleverdiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cleverdiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82333F111C9181CF008413BF /* CaloricalNeedsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloricalNeedsCalculator.swift; sourceTree = "<group>"; };
+		82333F151C918901008413BF /* DietGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietGenerator.swift; sourceTree = "<group>"; };
+		823AC99A1C90464400AC4257 /* DietDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietDataLoader.swift; sourceTree = "<group>"; };
+		823AC99D1C905DDC00AC4257 /* MyDietsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDietsViewController.swift; sourceTree = "<group>"; };
+		823AC99F1C90617300AC4257 /* MyDietCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDietCellTableViewCell.swift; sourceTree = "<group>"; };
+		824AFBFE1C8F7A7500A12A43 /* Cleverdiet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cleverdiet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		824AFC011C8F7A7500A12A43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		824AFC031C8F7A7500A12A43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		824AFC061C8F7A7500A12A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		824AFC081C8F7A7500A12A43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		824AFC0B1C8F7A7500A12A43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		824AFC0D1C8F7A7500A12A43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		824AFC1A1C8F80DA00A12A43 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		824AFC1D1C8F821100A12A43 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		824AFC1F1C8F844100A12A43 /* Diet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Diet.swift; sourceTree = "<group>"; };
+		824AFC211C8F860B00A12A43 /* Food.cdata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Food.cdata; sourceTree = "<group>"; };
+		824AFC231C8F872900A12A43 /* Diet.cdata */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Diet.cdata; sourceTree = "<group>"; };
+		824AFC291C8F87F700A12A43 /* UserDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDataLoader.swift; sourceTree = "<group>"; };
+		824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDataLoader.swift; sourceTree = "<group>"; };
+		82D26F1E1C90864A002DF5EE /* DietViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
+		82D26F201C908692002DF5EE /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		82F715F01C9371340013ED4A /* DailyNutritionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyNutritionData.swift; sourceTree = "<group>"; };
+		82F715F21C945CD80013ED4A /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
+		82F715F51C9462C90013ED4A /* XMLSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializable.swift; sourceTree = "<group>"; };
+		82F715F71C948C2C0013ED4A /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		8FEED8B5CC9D74587B906DAA /* Pods-Cleverdiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdiet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.debug.xcconfig"; sourceTree = "<group>"; };
+		CE6CF0ED5CB32349628C7E8A /* Pods-Cleverdiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cleverdiet.release.xcconfig"; path = "Pods/Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		824AFBFB1C8F7A7500A12A43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C3BA7689BCBF59D716ACE3D /* Pods_Cleverdiet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82333F101C917D69008413BF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				823AC99F1C90617300AC4257 /* MyDietCellTableViewCell.swift */,
+				82D26F201C908692002DF5EE /* FoodTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		82333F131C91867C008413BF /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				82333F111C9181CF008413BF /* CaloricalNeedsCalculator.swift */,
+			);
+			name = Calculators;
+			sourceTree = "<group>";
+		};
+		82333F141C9186A2008413BF /* Generators */ = {
+			isa = PBXGroup;
+			children = (
+				82333F151C918901008413BF /* DietGenerator.swift */,
+			);
+			name = Generators;
+			sourceTree = "<group>";
+		};
+		823AC99C1C905DAC00AC4257 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				824AFC031C8F7A7500A12A43 /* ViewController.swift */,
+				823AC99D1C905DDC00AC4257 /* MyDietsViewController.swift */,
+				82D26F1E1C90864A002DF5EE /* DietViewController.swift */,
+				82F715F71C948C2C0013ED4A /* CreateAccountViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		824AFBF51C8F7A7500A12A43 = {
+			isa = PBXGroup;
+			children = (
+				824AFC151C8F7E9D00A12A43 /* Data */,
+				824AFC001C8F7A7500A12A43 /* Cleverdiet */,
+				824AFBFF1C8F7A7500A12A43 /* Products */,
+				D710B0FCBD260C4175044A6B /* Pods */,
+				D8BC25C8B5EE77533B8E5640 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		824AFBFF1C8F7A7500A12A43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				824AFBFE1C8F7A7500A12A43 /* Cleverdiet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		824AFC001C8F7A7500A12A43 /* Cleverdiet */ = {
+			isa = PBXGroup;
+			children = (
+				82F715F41C945CDC0013ED4A /* Extensions */,
+				82333F101C917D69008413BF /* Views */,
+				823AC99C1C905DAC00AC4257 /* Controllers */,
+				824AFC271C8F879D00A12A43 /* Persistence */,
+				824AFC1C1C8F81FD00A12A43 /* Models */,
+				824AFC011C8F7A7500A12A43 /* AppDelegate.swift */,
+				824AFC051C8F7A7500A12A43 /* Main.storyboard */,
+				824AFC081C8F7A7500A12A43 /* Assets.xcassets */,
+				824AFC0A1C8F7A7500A12A43 /* LaunchScreen.storyboard */,
+				824AFC0D1C8F7A7500A12A43 /* Info.plist */,
+			);
+			path = Cleverdiet;
+			sourceTree = "<group>";
+		};
+		824AFC151C8F7E9D00A12A43 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				824AFC211C8F860B00A12A43 /* Food.cdata */,
+				824AFC231C8F872900A12A43 /* Diet.cdata */,
+			);
+			name = Data;
+			path = Cleverdiet/Data;
+			sourceTree = "<group>";
+		};
+		824AFC1C1C8F81FD00A12A43 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				82333F141C9186A2008413BF /* Generators */,
+				82333F131C91867C008413BF /* Calculators */,
+				824AFC1A1C8F80DA00A12A43 /* User.swift */,
+				824AFC1D1C8F821100A12A43 /* Food.swift */,
+				824AFC1F1C8F844100A12A43 /* Diet.swift */,
+				82F715F01C9371340013ED4A /* DailyNutritionData.swift */,
+				82F715F51C9462C90013ED4A /* XMLSerializable.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		824AFC271C8F879D00A12A43 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				824AFC281C8F87AE00A12A43 /* Loaders */,
+			);
+			name = Persistence;
+			sourceTree = "<group>";
+		};
+		824AFC281C8F87AE00A12A43 /* Loaders */ = {
+			isa = PBXGroup;
+			children = (
+				824AFC291C8F87F700A12A43 /* UserDataLoader.swift */,
+				824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */,
+				823AC99A1C90464400AC4257 /* DietDataLoader.swift */,
+			);
+			name = Loaders;
+			sourceTree = "<group>";
+		};
+		82F715F41C945CDC0013ED4A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				82F715F21C945CD80013ED4A /* Int.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D710B0FCBD260C4175044A6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FEED8B5CC9D74587B906DAA /* Pods-Cleverdiet.debug.xcconfig */,
+				CE6CF0ED5CB32349628C7E8A /* Pods-Cleverdiet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8BC25C8B5EE77533B8E5640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CD2CAD5EDBD3E2DC69F2F65 /* Pods_Cleverdiet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		824AFBFD1C8F7A7500A12A43 /* Cleverdiet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 824AFC101C8F7A7500A12A43 /* Build configuration list for PBXNativeTarget "Cleverdiet" */;
+			buildPhases = (
+				A38D65E7AF0EE7C615E942E7 /* Check Pods Manifest.lock */,
+				824AFBFA1C8F7A7500A12A43 /* Sources */,
+				824AFBFB1C8F7A7500A12A43 /* Frameworks */,
+				824AFBFC1C8F7A7500A12A43 /* Resources */,
+				C5D7C50902661D103C9A8BDA /* Embed Pods Frameworks */,
+				1BB0A1F0EACB75BE2A7114FD /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cleverdiet;
+			productName = Cleverdiet;
+			productReference = 824AFBFE1C8F7A7500A12A43 /* Cleverdiet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		824AFBF61C8F7A7500A12A43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Jose Luis Molina";
+				TargetAttributes = {
+					824AFBFD1C8F7A7500A12A43 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 824AFBF91C8F7A7500A12A43 /* Build configuration list for PBXProject "Cleverdiet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 824AFBF51C8F7A7500A12A43;
+			productRefGroup = 824AFBFF1C8F7A7500A12A43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				824AFBFD1C8F7A7500A12A43 /* Cleverdiet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		824AFBFC1C8F7A7500A12A43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				824AFC0C1C8F7A7500A12A43 /* LaunchScreen.storyboard in Resources */,
+				824AFC221C8F860B00A12A43 /* Food.cdata in Resources */,
+				824AFC091C8F7A7500A12A43 /* Assets.xcassets in Resources */,
+				824AFC071C8F7A7500A12A43 /* Main.storyboard in Resources */,
+				824AFC241C8F872900A12A43 /* Diet.cdata in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BB0A1F0EACB75BE2A7114FD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A38D65E7AF0EE7C615E942E7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5D7C50902661D103C9A8BDA /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		824AFBFA1C8F7A7500A12A43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82333F121C9181CF008413BF /* CaloricalNeedsCalculator.swift in Sources */,
+				82F715F11C9371340013ED4A /* DailyNutritionData.swift in Sources */,
+				824AFC2E1C8F8D3900A12A43 /* FoodDataLoader.swift in Sources */,
+				824AFC041C8F7A7500A12A43 /* ViewController.swift in Sources */,
+				82333F161C918901008413BF /* DietGenerator.swift in Sources */,
+				82F715F61C9462C90013ED4A /* XMLSerializable.swift in Sources */,
+				82F715F81C948C2C0013ED4A /* CreateAccountViewController.swift in Sources */,
+				824AFC2A1C8F87F700A12A43 /* UserDataLoader.swift in Sources */,
+				824AFC1E1C8F821100A12A43 /* Food.swift in Sources */,
+				82D26F1F1C90864A002DF5EE /* DietViewController.swift in Sources */,
+				82D26F211C908692002DF5EE /* FoodTableViewCell.swift in Sources */,
+				823AC99E1C905DDC00AC4257 /* MyDietsViewController.swift in Sources */,
+				824AFC021C8F7A7500A12A43 /* AppDelegate.swift in Sources */,
+				824AFC201C8F844100A12A43 /* Diet.swift in Sources */,
+				823AC9A01C90617300AC4257 /* MyDietCellTableViewCell.swift in Sources */,
+				823AC99B1C90464400AC4257 /* DietDataLoader.swift in Sources */,
+				824AFC1B1C8F80DA00A12A43 /* User.swift in Sources */,
+				82F715F31C945CD80013ED4A /* Int.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		824AFC051C8F7A7500A12A43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824AFC061C8F7A7500A12A43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		824AFC0A1C8F7A7500A12A43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				824AFC0B1C8F7A7500A12A43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		824AFC0E1C8F7A7500A12A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		824AFC0F1C8F7A7500A12A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		824AFC111C8F7A7500A12A43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FEED8B5CC9D74587B906DAA /* Pods-Cleverdiet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cleverdiet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joseluismolina.Cleverdiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		824AFC121C8F7A7500A12A43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE6CF0ED5CB32349628C7E8A /* Pods-Cleverdiet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Cleverdiet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joseluismolina.Cleverdiet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		824AFBF91C8F7A7500A12A43 /* Build configuration list for PBXProject "Cleverdiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824AFC0E1C8F7A7500A12A43 /* Debug */,
+				824AFC0F1C8F7A7500A12A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		824AFC101C8F7A7500A12A43 /* Build configuration list for PBXNativeTarget "Cleverdiet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824AFC111C8F7A7500A12A43 /* Debug */,
+				824AFC121C8F7A7500A12A43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 824AFBF61C8F7A7500A12A43 /* Project object */;
+}

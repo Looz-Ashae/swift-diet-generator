@@ -1,0 +1,23 @@
+>-
+  PODS:
+  - >-
+    SWXMLHash (2.1.0)
+
+>-
+  DEPENDENCIES:
+  - >-
+    SWXMLHash (~> 2.1.0)
+
+>-
+  SPEC CHECKSUMS:
+  >-
+    SWXMLHash: >-
+    7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
+
+>-
+  PODFILE CHECKSUM: >-
+  63cab4a3e5c00fea927105e0e3cf4acb9e4c28bc
+
+>-
+  COCOAPODS: >-
+  1.0.0.beta.4
