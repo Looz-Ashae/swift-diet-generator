@@ -6,26 +6,16 @@
 //  Copyright © 2016 Jose Luis Molina. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
-struct Diet : XMLSerializable {
-    var name: String?
-    var foods : [Food]
+class Diet : Object {
+    dynamic var name: String?
+    var foods : List<Food> = List()
     
-    init() {
-        self.foods = [Food]()
-    }
-    
-    init(name: String, foods : [Food]) {
+    convenience init(name: String, foods : List<Food>) {
+        self.init()
         self.name = name
         self.foods = foods
     }
-    
-    func toXML()-> String {
-        var xml = "<name>\(name)</name>\n"
-        for food in foods {
-            xml.appendContentsOf("\n<food>\n\(food.toXML())</food>")
-        }
-        return xml
-    }
+
 }

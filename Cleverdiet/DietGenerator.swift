@@ -15,10 +15,10 @@ final class DietGenerator: NSObject {
     }
     
     private class func generateWeightLossDiet(user : User, withName: String)-> Diet {
-        var diet = Diet()
+        let diet = Diet()
         diet.name = withName
         var dietCalories = 0.0
-        while (dietCalories < user.dailyNutritionalData.neededCaloriesForWeightLoss) {
+        while (dietCalories < user.dailyNutritionalData!.neededCaloriesForWeightLoss) {
             let food = FoodDataLoader.downloadFromDatabase(DietDataAttribute.Id, dataText: String(Int(arc4random_uniform(UInt32(FoodDataLoader.countElements())) + 1)))!
             if (!DietGenerator.foodIsConteinedInDiet(food, diet: diet)) {
                 dietCalories += food.caloriesPerServing
@@ -29,10 +29,10 @@ final class DietGenerator: NSObject {
     }
     
     private class func generateMaintenanceDiet(user : User, withName: String)-> Diet {
-        var diet = Diet()
+        let diet = Diet()
         diet.name = withName
         var dietCalories = 0.0
-        while (dietCalories < user.dailyNutritionalData.neededCalories) {
+        while (dietCalories < user.dailyNutritionalData!.neededCalories) {
             let food = FoodDataLoader.downloadFromDatabase(DietDataAttribute.Id, dataText: String(Int(arc4random_uniform(UInt32(FoodDataLoader.countElements())) + 1)))!
             if (!DietGenerator.foodIsConteinedInDiet(food, diet: diet)) {
                 dietCalories += food.caloriesPerServing
@@ -43,7 +43,7 @@ final class DietGenerator: NSObject {
     }
     
     private class func foodIsConteinedInDiet(food : Food, diet : Diet)-> Bool {
-        for var element in diet.foods {
+        for element in diet.foods {
             if (element.name == food.name) {
                 return true;
             }

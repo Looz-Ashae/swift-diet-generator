@@ -6,18 +6,19 @@
 //  Copyright © 2016 Jose Luis Molina. All rights reserved.
 //
 
-import UIKit
+import RealmSwift
 
-struct Food : XMLSerializable {
-    let name: String
-    let caloriesPerServing: Double
-    let servingInGrams: Double
-    let proteinsPerServing: Double
-    let fatsPerServing: Double
-    let carbohydratesPerServing: Double
-    let quantity: Double
+class Food : Object, XMLSerializable {
+    dynamic var name: String = ""
+    dynamic var caloriesPerServing: Double = 0.0
+    dynamic var servingInGrams: Double = 0.0
+    dynamic var proteinsPerServing: Double = 0.0
+    dynamic var fatsPerServing: Double = 0.0
+    dynamic var carbohydratesPerServing: Double = 0.0
+    dynamic var quantity: Double = 0.0
 
-    init(name: String, caloriesPerServing: Double, servingInGrams: Double, proteinsPerServing: Double, fatsPerServing: Double, carbohydratesPerServing: Double, quantity: Double) {
+    convenience required init(name: String, caloriesPerServing: Double, servingInGrams: Double, proteinsPerServing: Double, fatsPerServing: Double, carbohydratesPerServing: Double, quantity: Double) {
+        self.init()
         self.name = name
         self.caloriesPerServing = caloriesPerServing
         self.servingInGrams = servingInGrams

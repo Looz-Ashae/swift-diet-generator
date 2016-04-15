@@ -17,16 +17,13 @@ class ViewController: UIViewController {
 
     @IBAction func checkAuthenticationAction(sender: UIButton) {
         if (UserDataLoader.userExists(usernameTextField.text!, password: passwordTextField.text!) == true) {
+            UserManager.sharedInstance.currentUser = UserDataLoader.downloadFromDatabase(usernameTextField.text!)
             goToDietsView()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
     }
 
     func goToDietsView() {

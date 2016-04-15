@@ -18,8 +18,9 @@ class CreateAccountViewController: UIViewController {
     
     @IBAction func createAccountAction(sender: UIButton) {
         if (formIsFilling()) {
-            let user = User(name: usernameTextField.text!, height: Double(heightTextField.text!)!, weight: Double(weightTextField.text!)!, fat: Double(fatPercentageTextField.text!)!)
-            if (UserDataLoader.createUser(user, password: passwordTextField.text!)) {
+            let user = User(name: usernameTextField.text!, password: passwordTextField.text!, height: Double(heightTextField.text!)!, weight: Double(weightTextField.text!)!, fat: Double(fatPercentageTextField.text!)!)
+            if (UserDataLoader.createUser(user)) {
+                UserManager.sharedInstance.currentUser = UserDataLoader.downloadFromDatabase(usernameTextField.text!)
                 goToDietsView()
             }
         }

@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D21FE3557BFEAD1773EFE27E'
+               BlueprintIdentifier = '1D9624824365B37B1EE5C3E8'
                BlueprintName = 'Pods-Cleverdiet'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Cleverdiet.framework'>

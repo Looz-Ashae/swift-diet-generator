@@ -20,7 +20,7 @@ class MyDietsViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        diets = DietDataLoader.downloadFromDatabase()
+        diets = DietDataLoader.downloadFromDatabase()!
         tableView.reloadData()
     }
     
@@ -43,7 +43,7 @@ class MyDietsViewController: UITableViewController {
         } else if (segue.identifier == "GenerateNewDiet") {
             let dateFormatter: NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
-            svc.diet = DietGenerator.generateFor(UserDataLoader.downloadFromDatabase()!, withName: "Dieta del día \(dateFormatter.stringFromDate(NSDate()))")
+            svc.diet = DietGenerator.generateFor(UserManager.sharedInstance.currentUser!, withName: "Dieta del día \(dateFormatter.stringFromDate(NSDate()))")
             DietDataLoader.loadToDatabase(svc.diet)
         }
     }

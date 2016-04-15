@@ -7,49 +7,37 @@
 //
 
 import UIKit
-import SWXMLHash
+import RealmSwift
 
 final class UserDataLoader: NSObject {
-    class func downloadFromDatabase()-> User? {
-        if let dir : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
-            let path = dir.stringByAppendingPathComponent("user.cdata");
-            do {
-                let xml = SWXMLHash.parse(try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String)
-                return User(name: xml["user"][UserDataAttribute.Name.rawValue].element!.text!,
-                    height: Double(xml["user"][UserDataAttribute.Height.rawValue].element!.text!)!,
-                    weight: Double(xml["user"][UserDataAttribute.Weight.rawValue].element!.text!)!,
-                    fat: Double(xml["user"][UserDataAttribute.Fat.rawValue].element!.text!)!)
-            }
-            catch {}
+    class func downloadFromDatabase(username: String)-> User? {
+        do {
+            let realm = try Realm()
+            return realm.objects(User).filter("name = '\(username)'").first;
+        } catch {
+            return nil
         }
-        return nil
     }
     
     class func userExists(username: String, password: String)-> Bool {
-        if let dir : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
-            let path = dir.stringByAppendingPathComponent("user.cdata");
-            do {
-                let xml = SWXMLHash.parse(try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String)
-                if (xml["user"][UserDataAttribute.Name.rawValue].element!.text! == username && xml["user"][UserDataAttribute.Password.rawValue].element!.text! == password) {
-                    return true
-                }
-            }
-            catch {}
+        do {
+            let realm = try Realm()
+            return realm.objects(User).filter("name = '\(username)' AND password = '\(password)'").count > 0;
+        } catch {
+            return false
         }
-        return false
     }
     
-    class func createUser(user : User, password : String)-> Bool {
-        if let dir : NSString = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.AllDomainsMask, true).first {
-            let path = dir.stringByAppendingPathComponent("user.cdata");
-            do {
-                let userData = "<user>\n<password>\(password)</password>\n\(user.toXML())\n</user>"
-                try userData.writeToFile(path, atomically: false, encoding: NSUTF8StringEncoding)
-                return true
+    class func createUser(user : User)-> Bool {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.add(user)
             }
-            catch {}
+            return true
+        } catch {
+            return false
         }
-        return false
     }
 }
 

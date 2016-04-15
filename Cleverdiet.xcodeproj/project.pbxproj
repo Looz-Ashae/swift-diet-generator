@@ -27,6 +27,7 @@
 		824AFC2E1C8F8D3900A12A43 /* FoodDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */; };
 		82D26F1F1C90864A002DF5EE /* DietViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26F1E1C90864A002DF5EE /* DietViewController.swift */; };
 		82D26F211C908692002DF5EE /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D26F201C908692002DF5EE /* FoodTableViewCell.swift */; };
+		82DABC011CC1533900542BD5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DABC001CC1533900542BD5 /* UserManager.swift */; };
 		82F715F11C9371340013ED4A /* DailyNutritionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F01C9371340013ED4A /* DailyNutritionData.swift */; };
 		82F715F31C945CD80013ED4A /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F21C945CD80013ED4A /* Int.swift */; };
 		82F715F61C9462C90013ED4A /* XMLSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F715F51C9462C90013ED4A /* XMLSerializable.swift */; };
@@ -56,6 +57,7 @@
 		824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodDataLoader.swift; sourceTree = "<group>"; };
 		82D26F1E1C90864A002DF5EE /* DietViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietViewController.swift; sourceTree = "<group>"; };
 		82D26F201C908692002DF5EE /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		82DABC001CC1533900542BD5 /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		82F715F01C9371340013ED4A /* DailyNutritionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyNutritionData.swift; sourceTree = "<group>"; };
 		82F715F21C945CD80013ED4A /* Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Int.swift; sourceTree = "<group>"; };
 		82F715F51C9462C90013ED4A /* XMLSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLSerializable.swift; sourceTree = "<group>"; };
@@ -163,10 +165,6 @@
 			children = (
 				82333F141C9186A2008413BF /* Generators */,
 				82333F131C91867C008413BF /* Calculators */,
-				824AFC1A1C8F80DA00A12A43 /* User.swift */,
-				824AFC1D1C8F821100A12A43 /* Food.swift */,
-				824AFC1F1C8F844100A12A43 /* Diet.swift */,
-				82F715F01C9371340013ED4A /* DailyNutritionData.swift */,
 				82F715F51C9462C90013ED4A /* XMLSerializable.swift */,
 			);
 			name = Models;
@@ -175,6 +173,8 @@
 		824AFC271C8F879D00A12A43 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				82DABBFF1CC1530600542BD5 /* Manager */,
+				82DABBFE1CC13F2F00542BD5 /* Entities */,
 				824AFC281C8F87AE00A12A43 /* Loaders */,
 			);
 			name = Persistence;
@@ -188,6 +188,25 @@
 				823AC99A1C90464400AC4257 /* DietDataLoader.swift */,
 			);
 			name = Loaders;
+			sourceTree = "<group>";
+		};
+		82DABBFE1CC13F2F00542BD5 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				824AFC1A1C8F80DA00A12A43 /* User.swift */,
+				824AFC1D1C8F821100A12A43 /* Food.swift */,
+				824AFC1F1C8F844100A12A43 /* Diet.swift */,
+				82F715F01C9371340013ED4A /* DailyNutritionData.swift */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		82DABBFF1CC1530600542BD5 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				82DABC001CC1533900542BD5 /* UserManager.swift */,
+			);
+			name = Manager;
 			sourceTree = "<group>";
 		};
 		82F715F41C945CDC0013ED4A /* Extensions */ = {
@@ -341,6 +360,7 @@
 			files = (
 				82333F121C9181CF008413BF /* CaloricalNeedsCalculator.swift in Sources */,
 				82F715F11C9371340013ED4A /* DailyNutritionData.swift in Sources */,
+				82DABC011CC1533900542BD5 /* UserManager.swift in Sources */,
 				824AFC2E1C8F8D3900A12A43 /* FoodDataLoader.swift in Sources */,
 				824AFC041C8F7A7500A12A43 /* ViewController.swift in Sources */,
 				82333F161C918901008413BF /* DietGenerator.swift in Sources */,
