@@ -13,7 +13,6 @@ class MyDietsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        diets = DietDataLoader.downloadFromDatabase()
     }
 
     override func didReceiveMemoryWarning() {

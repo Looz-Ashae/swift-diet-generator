@@ -14,7 +14,6 @@ final class DietGenerator: NSObject {
         return (user.fat > 15) ? generateWeightLossDiet(user, withName: withName) : generateMaintenanceDiet(user, withName: withName);
     }
     
-    // TODO - Reestructurar
     private class func generateWeightLossDiet(user : User, withName: String)-> Diet {
         var diet = Diet()
         diet.name = withName

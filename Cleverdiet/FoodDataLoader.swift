@@ -61,7 +61,7 @@ final class FoodDataLoader {
             do {
                 let xml = SWXMLHash.parse(try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String)
                 for _ in xml["foods"]["food"] {
-                    count++;
+                    count += 1;
                 }
             }
                 

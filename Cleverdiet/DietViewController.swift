@@ -48,7 +48,7 @@ class DietViewController: UITableViewController {
     
     private func calculateSections() {
         let sectionsNumber = (diet.foods.count > 15) ? 6 : 5
-        for (var i = 1; i < sectionsNumber; i++) {
+        for i in 1 ..< sectionsNumber {
             sections.append("Food \(i)")
         }
     }

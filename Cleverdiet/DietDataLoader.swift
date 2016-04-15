@@ -17,8 +17,8 @@ class DietDataLoader: NSObject {
             do {
                 let xml = SWXMLHash.parse(try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String)
                 for xmlDiet in xml["diets"]["diet"] {
-                    diet.name = xmlDiet["name"].element!.text!
                     if (xmlDiet[dataType.rawValue].element!.text! == dataText) {
+                        diet.name = xmlDiet["name"].element!.text!
                         for xmlFood in xmlDiet["food"] {
                             diet.foods.append(FoodDataLoader.downloadFromDatabase(DietDataAttribute.Name, dataText: xmlFood["name"].element!.text!)!)
                         }
@@ -78,7 +78,7 @@ class DietDataLoader: NSObject {
             do {
                 let xml = SWXMLHash.parse(try NSString(contentsOfFile: path, encoding: NSUTF8StringEncoding) as String)
                 for _ in xml["diets"]["diet"] {
-                    count++;
+                    count += 1;
                 }
             }
                 
