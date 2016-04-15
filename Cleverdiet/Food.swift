@@ -16,6 +16,12 @@ class Food : Object, XMLSerializable {
     dynamic var fatsPerServing: Double = 0.0
     dynamic var carbohydratesPerServing: Double = 0.0
     dynamic var quantity: Double = 0.0
+    
+    override var description: String {
+        get {
+            return "\(name) (\(servingInGrams)gr, \(caloriesPerServing)kcal)"
+        }
+    }
 
     convenience required init(name: String, caloriesPerServing: Double, servingInGrams: Double, proteinsPerServing: Double, fatsPerServing: Double, carbohydratesPerServing: Double, quantity: Double) {
         self.init()

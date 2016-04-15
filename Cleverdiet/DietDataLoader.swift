@@ -40,6 +40,18 @@ class DietDataLoader: NSObject {
         }
     }
     
+    class func removeFromDatabase(diet : Diet)-> Bool {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(diet)
+            }
+            return true
+        } catch {
+            return false
+        }
+    }
+    
     class func countElements()-> Int {
         do {
             let realm = try Realm()

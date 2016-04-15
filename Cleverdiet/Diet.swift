@@ -12,6 +12,16 @@ class Diet : Object {
     dynamic var name: String?
     var foods : List<Food> = List()
     
+    override var description: String {
+        get {
+            var dietDescription = ""
+            for food in Array(foods) {
+                dietDescription.appendContentsOf("\n\(food.description)")
+            }
+            return dietDescription
+        }
+    }
+    
     convenience init(name: String, foods : List<Food>) {
         self.init()
         self.name = name

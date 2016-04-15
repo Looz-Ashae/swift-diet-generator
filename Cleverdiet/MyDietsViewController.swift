@@ -48,4 +48,17 @@ class MyDietsViewController: UITableViewController {
         }
     }
     
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        if (editingStyle == UITableViewCellEditingStyle.Delete) {
+            if (DietDataLoader.removeFromDatabase(diets[indexPath.row])) {
+                diets.removeAtIndex(indexPath.row)
+                tableView.reloadData()
+            }
+        }
+    }
+    
 }

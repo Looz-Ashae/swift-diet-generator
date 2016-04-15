@@ -12,6 +12,12 @@ class DietViewController: UITableViewController {
     var diet : Diet = Diet()
     var sections = [String]()
     
+    @IBAction func shareDiet(sender: AnyObject) {
+        
+        let activityViewController = UIActivityViewController(activityItems: [diet.description as NSString], applicationActivities: nil)
+        presentViewController(activityViewController, animated: true, completion: {})
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         calculateSections()
@@ -30,7 +36,7 @@ class DietViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! FoodTableViewCell
         let index = (self.diet.foods.count / self.sections.count) * indexPath.section + indexPath.row
-        cell.title.text = "\(diet.foods[index].name) (\(diet.foods[index].servingInGrams)gr, \(diet.foods[index].caloriesPerServing)kcal)"
+        cell.title.text = diet.foods[index].description
         return cell
     }
     
