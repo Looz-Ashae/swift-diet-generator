@@ -1,517 +1,4187 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		3CB872B6CDE77C6E5550AB2565574168 /* SWXMLHash-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 82493ADE1A84BBF53AC900D62B82E930 /* SWXMLHash-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F14C770DE79F32A3413427AD2DE3BE3 /* Pods-Cleverdiet-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D58049DA1CB9DCE0BF461A03A55AF /* Pods-Cleverdiet-dummy.m */; };
-		760B1E505890C95CE9DDBFF4C3C04E48 /* SWXMLHash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E5BA5F39E8C80E943664D013B39B76 /* SWXMLHash.swift */; };
-		9B676DB4E51B015BEF31252D1C7D2F7C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
-		A446693256998CCC7F410FC86C0D16C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
-		AD2ABC068FE11DBCC9E83C6B52C43A33 /* SWXMLHash-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BD2A52045256533717E6B5538C3787A /* SWXMLHash-dummy.m */; };
-		AD4A7B30CA3036DB871DBE0AAFA7387F /* Pods-Cleverdiet-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16528594B61BA7EFCB229EF1A59F4533 /* Pods-Cleverdiet-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		2973CD091D0B2EE041B6B17F6035309E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A9C2572DE18093FBA6BF919DF1B16B56;
-			remoteInfo = SWXMLHash;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		0193DE35A0901F8EAA9DC876DB130F5C /* Pods-Cleverdiet-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Cleverdiet-acknowledgements.plist"; sourceTree = "<group>"; };
-		16528594B61BA7EFCB229EF1A59F4533 /* Pods-Cleverdiet-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Cleverdiet-umbrella.h"; sourceTree = "<group>"; };
-		1A4C4F013686E0EF8B7F1DD7FEA05F45 /* Pods_Cleverdiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cleverdiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A581A39F8F3ECC1E530BFDB1CFE3363 /* SWXMLHash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SWXMLHash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		230554465E2E6A2C432E2AC6F1A10758 /* Pods-Cleverdiet-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cleverdiet-frameworks.sh"; sourceTree = "<group>"; };
-		30A6993C586DFC39FC91E1377BD3A2F8 /* Pods-Cleverdiet-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Cleverdiet-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3B7D58049DA1CB9DCE0BF461A03A55AF /* Pods-Cleverdiet-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Cleverdiet-dummy.m"; sourceTree = "<group>"; };
-		4E0A1B2CEF5946797C5789BD1325804F /* Pods-Cleverdiet.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Cleverdiet.modulemap"; sourceTree = "<group>"; };
-		60828F872DC10BA1E6BCE896F743EE17 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6821EC92738A190DD7F95CC3614EFD91 /* Pods-Cleverdiet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cleverdiet.release.xcconfig"; sourceTree = "<group>"; };
-		69E746FB4C5AE944FD58FEAD5822D12A /* SWXMLHash-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-prefix.pch"; sourceTree = "<group>"; };
-		76E5BA5F39E8C80E943664D013B39B76 /* SWXMLHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SWXMLHash.swift; path = Source/SWXMLHash.swift; sourceTree = "<group>"; };
-		82493ADE1A84BBF53AC900D62B82E930 /* SWXMLHash-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SWXMLHash-umbrella.h"; sourceTree = "<group>"; };
-		9BD2A52045256533717E6B5538C3787A /* SWXMLHash-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SWXMLHash-dummy.m"; sourceTree = "<group>"; };
-		A7D375B6CA271BF07F1B9A871C959B99 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		DA85E9C81FDCB1CC9A8A2C415BE5F766 /* SWXMLHash.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SWXMLHash.modulemap; sourceTree = "<group>"; };
-		DE94FB254B473AE091B7CEB5B840B81E /* Pods-Cleverdiet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Cleverdiet.debug.xcconfig"; sourceTree = "<group>"; };
-		E39D616FC415DF8D183AF06EB03FC0B5 /* Pods-Cleverdiet-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Cleverdiet-resources.sh"; sourceTree = "<group>"; };
-		F0DF727A09DEE860FDB29FB1DC6760EC /* SWXMLHash.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SWXMLHash.xcconfig; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		63706AD4EFAACA44613FF63F24A98054 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A446693256998CCC7F410FC86C0D16C1 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E75FE48C28B25FCB1BFCB40ED5D4E6C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B676DB4E51B015BEF31252D1C7D2F7C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		0B7D01303D355DD7FC08793E157040A4 /* Pods-Cleverdiet */ = {
-			isa = PBXGroup;
-			children = (
-				60828F872DC10BA1E6BCE896F743EE17 /* Info.plist */,
-				4E0A1B2CEF5946797C5789BD1325804F /* Pods-Cleverdiet.modulemap */,
-				30A6993C586DFC39FC91E1377BD3A2F8 /* Pods-Cleverdiet-acknowledgements.markdown */,
-				0193DE35A0901F8EAA9DC876DB130F5C /* Pods-Cleverdiet-acknowledgements.plist */,
-				3B7D58049DA1CB9DCE0BF461A03A55AF /* Pods-Cleverdiet-dummy.m */,
-				230554465E2E6A2C432E2AC6F1A10758 /* Pods-Cleverdiet-frameworks.sh */,
-				E39D616FC415DF8D183AF06EB03FC0B5 /* Pods-Cleverdiet-resources.sh */,
-				16528594B61BA7EFCB229EF1A59F4533 /* Pods-Cleverdiet-umbrella.h */,
-				DE94FB254B473AE091B7CEB5B840B81E /* Pods-Cleverdiet.debug.xcconfig */,
-				6821EC92738A190DD7F95CC3614EFD91 /* Pods-Cleverdiet.release.xcconfig */,
-			);
-			name = "Pods-Cleverdiet";
-			path = "Target Support Files/Pods-Cleverdiet";
-			sourceTree = "<group>";
-		};
-		112C7921E3A497328D11F4930CBBC9CA /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		343C60DF6186228543F1FA7476BD6083 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				1A4C4F013686E0EF8B7F1DD7FEA05F45 /* Pods_Cleverdiet.framework */,
-				1A581A39F8F3ECC1E530BFDB1CFE3363 /* SWXMLHash.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		3BCA00CDDAA9AAFC646E23610929A059 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				0B7D01303D355DD7FC08793E157040A4 /* Pods-Cleverdiet */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				FB1F6F753C50440C1AEE725CCDE703F2 /* Pods */,
-				343C60DF6186228543F1FA7476BD6083 /* Products */,
-				3BCA00CDDAA9AAFC646E23610929A059 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		84FFC27F11581C264642015B1A12D633 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				A7D375B6CA271BF07F1B9A871C959B99 /* Info.plist */,
-				DA85E9C81FDCB1CC9A8A2C415BE5F766 /* SWXMLHash.modulemap */,
-				F0DF727A09DEE860FDB29FB1DC6760EC /* SWXMLHash.xcconfig */,
-				9BD2A52045256533717E6B5538C3787A /* SWXMLHash-dummy.m */,
-				69E746FB4C5AE944FD58FEAD5822D12A /* SWXMLHash-prefix.pch */,
-				82493ADE1A84BBF53AC900D62B82E930 /* SWXMLHash-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SWXMLHash";
-			sourceTree = "<group>";
-		};
-		B849535CC0C1FC933893B1CAEA857F89 /* SWXMLHash */ = {
-			isa = PBXGroup;
-			children = (
-				76E5BA5F39E8C80E943664D013B39B76 /* SWXMLHash.swift */,
-				84FFC27F11581C264642015B1A12D633 /* Support Files */,
-			);
-			path = SWXMLHash;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				112C7921E3A497328D11F4930CBBC9CA /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB1F6F753C50440C1AEE725CCDE703F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				B849535CC0C1FC933893B1CAEA857F89 /* SWXMLHash */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		5CFFDD7B5236EA6D2BE960B3CEE17CC0 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD4A7B30CA3036DB871DBE0AAFA7387F /* Pods-Cleverdiet-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AB4CFEDE9CF6308B317586EFBF865E6D /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3CB872B6CDE77C6E5550AB2565574168 /* SWXMLHash-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		86A24BE8647B228C13A2C4CEA774B080 /* Pods-Cleverdiet */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8231E2D6DC7AF803EB4E4550B6B7F282 /* Build configuration list for PBXNativeTarget "Pods-Cleverdiet" */;
-			buildPhases = (
-				EAC08A91DC88F47362B829F122E97FEC /* Sources */,
-				63706AD4EFAACA44613FF63F24A98054 /* Frameworks */,
-				5CFFDD7B5236EA6D2BE960B3CEE17CC0 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0D1C45196E0B352023F6CC88A4432964 /* PBXTargetDependency */,
-			);
-			name = "Pods-Cleverdiet";
-			productName = "Pods-Cleverdiet";
-			productReference = 1A4C4F013686E0EF8B7F1DD7FEA05F45 /* Pods_Cleverdiet.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		A9C2572DE18093FBA6BF919DF1B16B56 /* SWXMLHash */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 95B23A40AA8EBDAF0ACCA9D1D0B9F58D /* Build configuration list for PBXNativeTarget "SWXMLHash" */;
-			buildPhases = (
-				AF0676E7F1C2E6B3483216E0910579D8 /* Sources */,
-				7E75FE48C28B25FCB1BFCB40ED5D4E6C /* Frameworks */,
-				AB4CFEDE9CF6308B317586EFBF865E6D /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SWXMLHash;
-			productName = SWXMLHash;
-			productReference = 1A581A39F8F3ECC1E530BFDB1CFE3363 /* SWXMLHash.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 343C60DF6186228543F1FA7476BD6083 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				86A24BE8647B228C13A2C4CEA774B080 /* Pods-Cleverdiet */,
-				A9C2572DE18093FBA6BF919DF1B16B56 /* SWXMLHash */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		AF0676E7F1C2E6B3483216E0910579D8 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AD2ABC068FE11DBCC9E83C6B52C43A33 /* SWXMLHash-dummy.m in Sources */,
-				760B1E505890C95CE9DDBFF4C3C04E48 /* SWXMLHash.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EAC08A91DC88F47362B829F122E97FEC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F14C770DE79F32A3413427AD2DE3BE3 /* Pods-Cleverdiet-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		0D1C45196E0B352023F6CC88A4432964 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SWXMLHash;
-			target = A9C2572DE18093FBA6BF919DF1B16B56 /* SWXMLHash */;
-			targetProxy = 2973CD091D0B2EE041B6B17F6035309E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		19A57EEFFD8608B233B167A21BAD63F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0DF727A09DEE860FDB29FB1DC6760EC /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		408D67310DDD3FD183041B9F20ABDA40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6821EC92738A190DD7F95CC3614EFD91 /* Pods-Cleverdiet.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Cleverdiet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Cleverdiet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		811519CB8F683AC06F9C98B55AC40F11 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		882EB4391EC2E701934974DA86F7343F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		BDA90B9DC0B89CA68C7FCAB25FF56D84 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0DF727A09DEE860FDB29FB1DC6760EC /* SWXMLHash.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SWXMLHash/SWXMLHash-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SWXMLHash/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SWXMLHash/SWXMLHash.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SWXMLHash;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E4CED9DD743FC984FFA80DFF053C89DA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE94FB254B473AE091B7CEB5B840B81E /* Pods-Cleverdiet.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Cleverdiet/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Cleverdiet;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				882EB4391EC2E701934974DA86F7343F /* Debug */,
-				811519CB8F683AC06F9C98B55AC40F11 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8231E2D6DC7AF803EB4E4550B6B7F282 /* Build configuration list for PBXNativeTarget "Pods-Cleverdiet" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E4CED9DD743FC984FFA80DFF053C89DA /* Debug */,
-				408D67310DDD3FD183041B9F20ABDA40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		95B23A40AA8EBDAF0ACCA9D1D0B9F58D /* Build configuration list for PBXNativeTarget "SWXMLHash" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BDA90B9DC0B89CA68C7FCAB25FF56D84 /* Debug */,
-				19A57EEFFD8608B233B167A21BAD63F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>0085FCB5E624DC7BB8836972DA80D78E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B0F5B330DE17F849FA582613030C05C0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>00B18AC0F9E250F7BA09FD8C08FA82CB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>43F01071C5A15BC175760C4A4E995D90</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>00B5E70419FB3CA66C0738E42A1F65F8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>99609D090E0FB6E3605BB935B6A1EB00</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>00B8538C08E7C7220F7F3126BAED7384</key>
+		<dict>
+			<key>fileRef</key>
+			<string>DA858B65908D721F75DC19BA9A74168A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>0104D01CF6E80DB738E546BAA60291E6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>RealmConfiguration.swift</string>
+			<key>path</key>
+			<string>RealmSwift/RealmConfiguration.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>01697712AC21EB06A1D683815942DE0C</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4DEC65B3CE55029592F6C66799A091EC</string>
+			<key>remoteInfo</key>
+			<string>Realm</string>
+		</dict>
+		<key>0193DE35A0901F8EAA9DC876DB130F5C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>035711F908E87E2EF2F546D46AED0585</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8635189B1648D5CAD6E018B689B613AE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>056A17BB43A5C8839F0F5A44FBDB2BAA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>066A647EDAFF4F08B78716DAA3244280</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMArray_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMArray_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>06863D6E3E3F4262462A79D7ADBA39C2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMObjectStore.mm</string>
+			<key>path</key>
+			<string>Realm/RLMObjectStore.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0705ECDCA3941BF01170592980080502</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CF7A105C84A21B2192C22780EB935C62</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0B7D01303D355DD7FC08793E157040A4</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>60828F872DC10BA1E6BCE896F743EE17</string>
+				<string>4E0A1B2CEF5946797C5789BD1325804F</string>
+				<string>30A6993C586DFC39FC91E1377BD3A2F8</string>
+				<string>0193DE35A0901F8EAA9DC876DB130F5C</string>
+				<string>3B7D58049DA1CB9DCE0BF461A03A55AF</string>
+				<string>230554465E2E6A2C432E2AC6F1A10758</string>
+				<string>E39D616FC415DF8D183AF06EB03FC0B5</string>
+				<string>16528594B61BA7EFCB229EF1A59F4533</string>
+				<string>DE94FB254B473AE091B7CEB5B840B81E</string>
+				<string>6821EC92738A190DD7F95CC3614EFD91</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-Cleverdiet</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-Cleverdiet</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0BD380474CF4431B5C40C25D1002764B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7862C1976EACDF9D7D8D03C8476204F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>0F1E770842942181A1DA35EFD153CAE8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMObjectSchema.mm</string>
+			<key>path</key>
+			<string>Realm/RLMObjectSchema.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0FC4AF879E8CC9A27AFE2FE39A76D5E3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>821075A73F628F278FCD90FFF572DD03</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>114E4EFCA1FF581D225DB9F7A44292A0</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>ADDF41E8A4E136A926AC15FEECB45BA2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Realm/Realm-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Realm/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Realm/Realm.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>Realm</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>12222FE1FB747DF5EFF8BCF693735451</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMListBase.mm</string>
+			<key>path</key>
+			<string>Realm/RLMListBase.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1399780A44486E95383BB69AC349FADF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9E8268EF35B5C6E5E0A16039E71F3DA4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>153F21B7C2ED60E990FB6D3248CA625B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>31A5C0B567D946A6C556E9F97DD5B5F2</string>
+				<string>614B1545ECF0CAC352B374257D1FEE43</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>16528594B61BA7EFCB229EF1A59F4533</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>190AE2FF9E1F052B47CB6C5B2F9E1CDC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7880893A113F359738C9F55B7AFDB03C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>19BFAB6B9BA82D26F48746AC5E225815</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4E208E0C7703CE5ED073BA647E906791</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1CC0F1C2E1EF98FD7C2A767BF5946F6E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMSchema.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMSchema.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D2ABEAECC6E743B3C5ED3A1EEBA001E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>cached_realm.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/impl/apple/cached_realm.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1EACE3341BFF6CD50C41894D0EC25F1D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>92EE447C789628519988F77D13F04969</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>229F05089147F5CF8382801C6EA6BE50</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D145A33C3777D2B8B809AC8847F4C618</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>22D356799FACF818A4AB30C366420EBB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RealmSwift.framework</string>
+			<key>path</key>
+			<string>RealmSwift.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>230554465E2E6A2C432E2AC6F1A10758</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>23643D0F0AB7C13BE0C05507F9EED333</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Realm</string>
+			<key>target</key>
+			<string>4DEC65B3CE55029592F6C66799A091EC</string>
+			<key>targetProxy</key>
+			<string>01697712AC21EB06A1D683815942DE0C</string>
+		</dict>
+		<key>256172E945F14CA71E145C2DB8AAA432</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMRealmUtil.mm</string>
+			<key>path</key>
+			<string>Realm/RLMRealmUtil.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>27636E93BF93249D36342042C41B27F4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>364116DDFA2C8379795C49F30CDC4617</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>294B90FE3E5EF74082021978BBCD73F6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>RealmSwift</string>
+			<key>target</key>
+			<string>A3354E3531E5DF7603D2791ACE685A23</string>
+			<key>targetProxy</key>
+			<string>FBB2DC00FBD38B2DD6133B562F332314</string>
+		</dict>
+		<key>2A7B7CCD40D150A8F5D27531F990F65A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0F1E770842942181A1DA35EFD153CAE8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>2BDF18C2AF1DF8D8BCD2B31D0F8A8A5E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Optional.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Optional.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2C2CDE421647DDF56861A00EDA7E4047</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RLMSwiftSupport.m</string>
+			<key>path</key>
+			<string>Realm/RLMSwiftSupport.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>A70CDAD61F90AC503C7D04CC22DA2923</string>
+				<string>FB45FFD90572718D82AB9092B750F0CA</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>2E1A2E4AE004E3F81C95A27483C7E584</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E706FF6081CA9FB53614F4DA441B3029</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>2EB9266A49A5801235E4DD99F11E076D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMAccessor.mm</string>
+			<key>path</key>
+			<string>Realm/RLMAccessor.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F27BFAF643088EF84C492744008E67F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5263E38D4298EF282086229880CA4121</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3056258FD0C38D6DCC75B798FA2ABDAC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Realm.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>30A6993C586DFC39FC91E1377BD3A2F8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>30E57D8DA70EBE15A00CF1DC9CE39DA1</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>4DEC65B3CE55029592F6C66799A091EC</string>
+			<key>remoteInfo</key>
+			<string>Realm</string>
+		</dict>
+		<key>31A5C0B567D946A6C556E9F97DD5B5F2</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B242B48AD3DEB98E0F8A77BF8B78EB7E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SWXMLHash/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>SWXMLHash</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>31C22DAAAAE6D4AF9C1169F9A2D45F52</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Schema.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Schema.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>32565497F37DCDC1CCDA851EEDEC0144</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>librealm-ios.a</string>
+			<key>path</key>
+			<string>core/librealm-ios.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>334A50AFDF00D7988F22D156ADD7BC0D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>SWXMLHash.framework</string>
+			<key>path</key>
+			<string>SWXMLHash.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>33B03BE41EF1A275CF3164ED0BD4FCB8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1CC0F1C2E1EF98FD7C2A767BF5946F6E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>364116DDFA2C8379795C49F30CDC4617</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMRealmConfiguration.mm</string>
+			<key>path</key>
+			<string>Realm/RLMRealmConfiguration.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3733F66BB533C45B3D6CB451C1299C87</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>32565497F37DCDC1CCDA851EEDEC0144</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>37791B9B2B225CF253A21B9841DD3142</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AA61B38455F0DFE6F17B941EBBBE1201</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>388A89569924830BF4BF8D0DBF16B71E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FE0423BEFD5F8E94921E18BB78E7C9CE</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>390D11C9E16A334395A4E5E382F9E4C3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>579E48A66F8BB422207553D77DD89C2E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>3ABD3BDBDCE3258DC223156FE183E566</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D944BE0D9753D5F4A28C8056EACCE044</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>3B4874DFF0BB8D85EA5F9B3761C49F6C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D07314D4B7CC1A06AE81C44171F6DC55</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3B5A2043AF1B8D44800208DBE2F1DBF2</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>5454D9D31AEC0DB4B6D2DDFDA270C774</string>
+			<key>buildPhases</key>
+			<array>
+				<string>416F38D7330774A7EBC37CDDBBBE3E17</string>
+				<string>8A9B06C0A653FE6E6B389CCD556CB4B4</string>
+				<string>4C74BD91BDEF7ABD6C464224F88F5610</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>9277DECEDBA7AB633CE840528DAB8885</string>
+				<string>294B90FE3E5EF74082021978BBCD73F6</string>
+				<string>B53F7CC82F35530C976058949239862B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-Cleverdiet</string>
+			<key>productName</key>
+			<string>Pods-Cleverdiet</string>
+			<key>productReference</key>
+			<string>BFA8D92946F670DBA546CC0ED34EB4A4</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>3B7D58049DA1CB9DCE0BF461A03A55AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3BCA00CDDAA9AAFC646E23610929A059</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0B7D01303D355DD7FC08793E157040A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3C3728870B2A6A2A503EC2A3858C86E3</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FA1DCB73C67F1CE2090B7B40692794A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3CF912EACD1CDF7AD3D9E99B27833F77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>796349F6B8ADD774B601C12F35464DD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>3E6827496535CDFF9B5FFFCCEA463B34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObject_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObject_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>416F38D7330774A7EBC37CDDBBBE3E17</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7B9E60D701A0932C6774EC3079E739A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4172FDC1B192B02877B6B93FC4B5DAB4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>Realm.h</string>
+			<key>path</key>
+			<string>include/Realm/Realm.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>427AAD18127B2B19877326C3D03DC27D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Object.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Object.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>43F01071C5A15BC175760C4A4E995D90</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMSchema_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMSchema_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>44AFC63CDAD02EB752DF5077B35E700F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3056258FD0C38D6DCC75B798FA2ABDAC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>45A51640C19076AC7CEBD84F961019EF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMPredicateUtil.mm</string>
+			<key>path</key>
+			<string>Realm/RLMPredicateUtil.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>45BF31F031AB4CAA5C5B864EF6AB65AB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>53A0C2B1C9AC5FCDE0024A4A1123C070</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>46F6DD8235E877D90655D836E88ABB0D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>transact_log_handler.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/impl/transact_log_handler.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>47303683720A3EE1B28378636D7ACAC1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMRealm_Dynamic.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMRealm_Dynamic.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4888B3AD4E40D5F53F885F16F74A111B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>06863D6E3E3F4262462A79D7ADBA39C2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>493153CA3A918B914243D8845251189A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>1D2ABEAECC6E743B3C5ED3A1EEBA001E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>49DC6D569A804E17A439243D9234FA14</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMOptionalBase.mm</string>
+			<key>path</key>
+			<string>Realm/RLMOptionalBase.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4C74BD91BDEF7ABD6C464224F88F5610</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B4452EFD794964C322AD112CA5CB59A5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D13AB371D08F204D25A17802AD1CD3F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3B4874DFF0BB8D85EA5F9B3761C49F6C</string>
+				<string>190AE2FF9E1F052B47CB6C5B2F9E1CDC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4D6C9ACAC5E4276B9308915733FA6B25</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMUtil.mm</string>
+			<key>path</key>
+			<string>Realm/RLMUtil.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4DEC65B3CE55029592F6C66799A091EC</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>C07C6949E8F81F94FD1A55A3F8E1D76F</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BF8E20F958C01CBFF8EB47F94800FDFC</string>
+				<string>8E3E0FA87BCBB50DA9FDC3CE1B2AC191</string>
+				<string>54B8DE2E2C844FE3F26DE59120C95146</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Realm</string>
+			<key>productName</key>
+			<string>Realm</string>
+			<key>productReference</key>
+			<string>B0EDE4671409A1B186B1EFF42431D85F</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>4E0A1B2CEF5946797C5789BD1325804F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E208E0C7703CE5ED073BA647E906791</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMRealm.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMRealm.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4F8F03BD249BA1FF902FD01AE81ABAEE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6FA1DCB73C67F1CE2090B7B40692794A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>50B9DB8AC1FCADB6D1715660F5DD1547</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMProperty_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMProperty_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51733C97D44BD9B3ECB2A39F8A65E796</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Error.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Error.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>51C7F95EC16F1013C56A0493DBD7040E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>31C22DAAAAE6D4AF9C1169F9A2D45F52</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>522E40B3CBFD1FBBE886A61931ECDDD6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMResults.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMResults.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5263E38D4298EF282086229880CA4121</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Aliases.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Aliases.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>53A0C2B1C9AC5FCDE0024A4A1123C070</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMConstants.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMConstants.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>541B599B510AE0FA82AB2FD2EF1DC6CC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7880893A113F359738C9F55B7AFDB03C</string>
+				<string>A5F37816EC507DCAE57BD077C0EAD01E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>path</key>
+			<string>SWXMLHash</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5454D9D31AEC0DB4B6D2DDFDA270C774</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>CE712CD2E5CF93317D49FEF8D7E1C774</string>
+				<string>62CF633E3519CA31374EB44F2CD418F6</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>54B8DE2E2C844FE3F26DE59120C95146</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>BD3842A229ECA47FD7F0E749FD2591F0</string>
+				<string>0705ECDCA3941BF01170592980080502</string>
+				<string>DB3CBDA0BAFC817A0DA167DB3FDC783F</string>
+				<string>B6D7BF9207BCA0D85923D7EF681319E4</string>
+				<string>EC2E65C8A73030E2CBB560AFC4AA1AC6</string>
+				<string>45BF31F031AB4CAA5C5B864EF6AB65AB</string>
+				<string>B6B137715FBDDBCDE655429A407550E8</string>
+				<string>0FC4AF879E8CC9A27AFE2FE39A76D5E3</string>
+				<string>F3B966640A5EB6C37D8B98CEA9B183C6</string>
+				<string>8B52BBC2C923825E3CCA3D9E4020E49D</string>
+				<string>F03348AFE8A3B1F79839678DF340204C</string>
+				<string>F5A86E46BA6B20CEA5934954F3585434</string>
+				<string>3CF912EACD1CDF7AD3D9E99B27833F77</string>
+				<string>56B8BEA19DE7D29A22659DF9D072579C</string>
+				<string>DBBAA28614FB00FB4888FACCF447ABAC</string>
+				<string>E90FD35A1A1CC0DD8FA51B53BF89119B</string>
+				<string>00B5E70419FB3CA66C0738E42A1F65F8</string>
+				<string>ECC907F24A60653177FBD411468A7375</string>
+				<string>C41E3EE470D5CF524CE0C4A338B4667F</string>
+				<string>E2F4786390C9DA4F9C9E612069A0BCBB</string>
+				<string>A18C21853CB132ABA0BE6FEF13378FE0</string>
+				<string>19BFAB6B9BA82D26F48746AC5E225815</string>
+				<string>623E0201019908A529DCAB4136BE1C4C</string>
+				<string>1EACE3341BFF6CD50C41894D0EC25F1D</string>
+				<string>57806F28E6BED1C794CCDC7FD7CD4FA9</string>
+				<string>229F05089147F5CF8382801C6EA6BE50</string>
+				<string>7A279154686ABB14636629CF8A09FBD2</string>
+				<string>37791B9B2B225CF253A21B9841DD3142</string>
+				<string>33B03BE41EF1A275CF3164ED0BD4FCB8</string>
+				<string>00B18AC0F9E250F7BA09FD8C08FA82CB</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>54D397EF2ACF778DB24B78B41DD0C2B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SWXMLHash-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>559C7AC32F83222507D0EB2B059DD414</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0104D01CF6E80DB738E546BAA60291E6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>56B8BEA19DE7D29A22659DF9D072579C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D090A854FDF51FDC06FE30B2C8B302BC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>57806F28E6BED1C794CCDC7FD7CD4FA9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5A2AFCC1F1FEED63436681E370F80BF4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>579E48A66F8BB422207553D77DD89C2E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMMigration.mm</string>
+			<key>path</key>
+			<string>Realm/RLMMigration.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>58A2216188D2FEC6E2A56C5F57DB308C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMPlatform.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMPlatform.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5A2AFCC1F1FEED63436681E370F80BF4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMRealmConfiguration.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMRealmConfiguration.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE007F4E95D356CD7F4D2315ACE9477</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>F7080BECC26DA9F30744214CA42EAEA6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>5B47BA4183B281017EA49AE18C2EAD72</key>
+		<dict>
+			<key>fileRef</key>
+			<string>867F503F25F8B57FBE3182C8ED0FDB41</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>5C13187831C647CF1BB517207815A110</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AD71ED418FF08152CB137A3850373561</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>5E3477AB1F98B14134E65C894192858F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RealmSwift-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5F8295F25B0C144ECB1D0C9C6830D7CA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>DB393724AB359AD3441DBEAF0FBD0C64</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>60446BCD08703C188112A47674A91C16</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2BDF18C2AF1DF8D8BCD2B31D0F8A8A5E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>60828F872DC10BA1E6BCE896F743EE17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>614B1545ECF0CAC352B374257D1FEE43</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>B242B48AD3DEB98E0F8A77BF8B78EB7E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/SWXMLHash/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/SWXMLHash/SWXMLHash.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>SWXMLHash</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>61A48ADD06618F0B909FDB1BE321F0A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>RealmCollectionType.swift</string>
+			<key>path</key>
+			<string>RealmSwift/RealmCollectionType.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6227142556B08F1CF2E40B0BF92BC6F2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B461EBB30AD6001F20064969F7055D89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>62290BAEC0C5DF117258E05DADB40C42</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObjectSchema_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObjectSchema_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>623E0201019908A529DCAB4136BE1C4C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>47303683720A3EE1B28378636D7ACAC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>62CF633E3519CA31374EB44F2CD418F6</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>6821EC92738A190DD7F95CC3614EFD91</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Cleverdiet/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Cleverdiet</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>63AF5BCF8D99E58995BA507B4558D02C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>object_store.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/object_store.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63CD1F9E91A0D2B9B41D2DE846F324FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>46F6DD8235E877D90655D836E88ABB0D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>659EBE0BEC1D7EFDADBF1068DDB59A01</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>A143F7269CB11C6D83F729F468E26485</string>
+				<string>AAD4594A11CBE5099FFD14680BC12A91</string>
+				<string>541B599B510AE0FA82AB2FD2EF1DC6CC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>669D6C6EF3BF87BEAAB29ABBAE182B78</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6744C39013BD490658C92CE3DDD9A0A1</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A8D5F4DB5DCA73780E90462E0487DEF6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>67DD38F0815210721650A3FAEF0EC489</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMDefines.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMDefines.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6821EC92738A190DD7F95CC3614EFD91</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6876F3A40BDDC5A8B486DB2BCCC3DD49</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>153F21B7C2ED60E990FB6D3248CA625B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>4D13AB371D08F204D25A17802AD1CD3F</string>
+				<string>5AE007F4E95D356CD7F4D2315ACE9477</string>
+				<string>F165D99755D1DFED6F7FD86A2E9006C6</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>productName</key>
+			<string>SWXMLHash</string>
+			<key>productReference</key>
+			<string>334A50AFDF00D7988F22D156ADD7BC0D</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>6A13AB190A77EA580D24446E26591CFF</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FA1DCB73C67F1CE2090B7B40692794A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6AEE1AD2BF4EB79B1F443B84DA66B30C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AE0612D5E1C3529429444AB372C56DCC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6C43A0256A6E2D53006BA7EBBE7066F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>54D397EF2ACF778DB24B78B41DD0C2B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>6DB20CCF304650AF0E6A9CE6F2B5155D</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Realm.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6FA1DCB73C67F1CE2090B7B40692794A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>7308CAC698688CA0438A7E090EF88A7B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A3362DF61B032E15A0331ED770EDFB11</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>74E0891980B2915CE1A41472288BB681</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2EB9266A49A5801235E4DD99F11E076D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>74FB55717EF0CE33321374CDDC5A2622</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FA1DCB73C67F1CE2090B7B40692794A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>764EA8CA8ACA11F10EAC99C374A5FBED</key>
+		<dict>
+			<key>fileRef</key>
+			<string>79772772FCB2DCF7F996A5F9AC1FB9F1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>772816C3BDA97B2D667C50AC54A01B39</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D055E383103D7D8780710BC0E7724C40</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>772D5E3E3EE7A1DFD5F4B69807F0DA41</key>
+		<dict>
+			<key>fileRef</key>
+			<string>45A51640C19076AC7CEBD84F961019EF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>7777507418F41F715576CDD0F78189D3</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>85E65686E94B1A26B3D155A2F10BF6B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/RealmSwift/RealmSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/RealmSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/RealmSwift/RealmSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>RealmSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>7880893A113F359738C9F55B7AFDB03C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SWXMLHash.swift</string>
+			<key>path</key>
+			<string>Source/SWXMLHash.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>796349F6B8ADD774B601C12F35464DD1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObjectBase.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObjectBase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>79772772FCB2DCF7F996A5F9AC1FB9F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMArrayLinkView.mm</string>
+			<key>path</key>
+			<string>Realm/RLMArrayLinkView.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A279154686ABB14636629CF8A09FBD2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>522E40B3CBFD1FBBE886A61931ECDDD6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>7B2FB5C548C840C7B64D4E8E0CEA988E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMCollection.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMCollection.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7C7C889708CAB542E750E24331CE107C</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>7777507418F41F715576CDD0F78189D3</string>
+				<string>BE8023CEA9F20AABC80E670BE3775394</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7CDE0E3A071EE2046A2BBA623975BEB9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B29D4F004A98C9B8EB224962EC2F4138</string>
+				<string>6DB20CCF304650AF0E6A9CE6F2B5155D</string>
+				<string>ADDF41E8A4E136A926AC15FEECB45BA2</string>
+				<string>C786B59E07B1F1F87686E00EC00E988F</string>
+				<string>9A502746ABBC39745EAB7A72885B05BF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/Realm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>EC2C06C32C4F57A6CDBE2847A1DF4D87</string>
+				<string>659EBE0BEC1D7EFDADBF1068DDB59A01</string>
+				<string>C658F473F27E7719F0D5AF994FD14320</string>
+				<string>3BCA00CDDAA9AAFC646E23610929A059</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E76135C109DF8D3D2F9A4A6DA3AEEB4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2C2CDE421647DDF56861A00EDA7E4047</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>7FD2D5EBE4F502ACA0E33AEC5E92A2DF</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4172FDC1B192B02877B6B93FC4B5DAB4</string>
+				<string>F69AA0AA6B56BD8D33D9795988BBD817</string>
+				<string>7B2FB5C548C840C7B64D4E8E0CEA988E</string>
+				<string>53A0C2B1C9AC5FCDE0024A4A1123C070</string>
+				<string>67DD38F0815210721650A3FAEF0EC489</string>
+				<string>98CE8A6B7424D89031096BE43A2D51F4</string>
+				<string>9642C1277F90A05B844B213B3A46B012</string>
+				<string>796349F6B8ADD774B601C12F35464DD1</string>
+				<string>D090A854FDF51FDC06FE30B2C8B302BC</string>
+				<string>88552F162913DCFAEBF22D82DB8D1E9F</string>
+				<string>58A2216188D2FEC6E2A56C5F57DB308C</string>
+				<string>C688654BCB41F06EE3256F0FBD926C06</string>
+				<string>4E208E0C7703CE5ED073BA647E906791</string>
+				<string>47303683720A3EE1B28378636D7ACAC1</string>
+				<string>5A2AFCC1F1FEED63436681E370F80BF4</string>
+				<string>522E40B3CBFD1FBBE886A61931ECDDD6</string>
+				<string>1CC0F1C2E1EF98FD7C2A767BF5946F6E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Headers</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>806968C78F7BA494BA6936D8DC8ED10D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF089B03F8F2504B0F9233D5DEB24AB0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>80B9AC0A17DAD79F38D11CA03187F4A8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8791257A7E2FA7E4962BB2D4A29109FD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>821075A73F628F278FCD90FFF572DD03</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMListBase.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMListBase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>829B4271F51C1A7865A07DBC85EE9E70</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F4A2100A1DE23054781460CB52150E34</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>83300C063AC5FECC1B8B4FF502322A77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FBB8F68D97EA0A043504AA41A6416259</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>85E65686E94B1A26B3D155A2F10BF6B9</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>RealmSwift.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8635189B1648D5CAD6E018B689B613AE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>external_commit_helper.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/impl/apple/external_commit_helper.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>867F503F25F8B57FBE3182C8ED0FDB41</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>results.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/results.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8791257A7E2FA7E4962BB2D4A29109FD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RLMConstants.m</string>
+			<key>path</key>
+			<string>Realm/RLMConstants.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>88552F162913DCFAEBF22D82DB8D1E9F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObjectSchema.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObjectSchema.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8A9B06C0A653FE6E6B389CCD556CB4B4</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>74FB55717EF0CE33321374CDDC5A2622</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8B52BBC2C923825E3CCA3D9E4020E49D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>941086A58F6658E485E99BDD7A3BAB92</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>8E3E0FA87BCBB50DA9FDC3CE1B2AC191</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6A13AB190A77EA580D24446E26591CFF</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>8F02E38255AD77025AE0135588037E15</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>List.swift</string>
+			<key>path</key>
+			<string>RealmSwift/List.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9028534673FCA89393D5D2A052AE2AB4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>RealmSwift.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>911139375EA22229BDB12BB3C134E0B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RealmSwift-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9229FC19094E8AB6CC3985BCBEC4F098</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AB4BD68E35061FD4EAEBFE57D4EE9CA8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>9277DECEDBA7AB633CE840528DAB8885</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>Realm</string>
+			<key>target</key>
+			<string>4DEC65B3CE55029592F6C66799A091EC</string>
+			<key>targetProxy</key>
+			<string>30E57D8DA70EBE15A00CF1DC9CE39DA1</string>
+		</dict>
+		<key>92EE447C789628519988F77D13F04969</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMRealm_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMRealm_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>92FC398EB2A151F9E69E6B31A08A0F57</key>
+		<dict>
+			<key>fileRef</key>
+			<string>256172E945F14CA71E145C2DB8AAA432</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>941086A58F6658E485E99BDD7A3BAB92</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMMigration_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMMigration_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>94142A2042FECF4B6252F9DFF7056D34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>SWXMLHash.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9642C1277F90A05B844B213B3A46B012</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObject.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObject.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9875EC0AE20A3BB3189A17D33FB106C1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Util.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Util.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>98CE8A6B7424D89031096BE43A2D51F4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMMigration.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMMigration.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>99609D090E0FB6E3605BB935B6A1EB00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObjectStore.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObjectStore.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9A502746ABBC39745EAB7A72885B05BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Realm-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9B0DB1D9028003174FFF3B86F63BB93C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>EC2C091848B440C6F9DFC5838CE56BC5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9BC702A2A069BDF88F6EEF177E839EEA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>12222FE1FB747DF5EFF8BCF693735451</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>9E8268EF35B5C6E5E0A16039E71F3DA4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>object_schema.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/object_schema.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A143F7269CB11C6D83F729F468E26485</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>AB4BD68E35061FD4EAEBFE57D4EE9CA8</string>
+				<string>1D2ABEAECC6E743B3C5ED3A1EEBA001E</string>
+				<string>8635189B1648D5CAD6E018B689B613AE</string>
+				<string>AF089B03F8F2504B0F9233D5DEB24AB0</string>
+				<string>9E8268EF35B5C6E5E0A16039E71F3DA4</string>
+				<string>63AF5BCF8D99E58995BA507B4558D02C</string>
+				<string>DA858B65908D721F75DC19BA9A74168A</string>
+				<string>867F503F25F8B57FBE3182C8ED0FDB41</string>
+				<string>CF7A105C84A21B2192C22780EB935C62</string>
+				<string>2EB9266A49A5801235E4DD99F11E076D</string>
+				<string>C7E89D93766319A363949717D00D5951</string>
+				<string>E7862C1976EACDF9D7D8D03C8476204F</string>
+				<string>066A647EDAFF4F08B78716DAA3244280</string>
+				<string>79772772FCB2DCF7F996A5F9AC1FB9F1</string>
+				<string>8791257A7E2FA7E4962BB2D4A29109FD</string>
+				<string>821075A73F628F278FCD90FFF572DD03</string>
+				<string>12222FE1FB747DF5EFF8BCF693735451</string>
+				<string>579E48A66F8BB422207553D77DD89C2E</string>
+				<string>941086A58F6658E485E99BDD7A3BAB92</string>
+				<string>C1AF8F7796FC3A6BC25F5D19886FC538</string>
+				<string>3E6827496535CDFF9B5FFFCCEA463B34</string>
+				<string>D944BE0D9753D5F4A28C8056EACCE044</string>
+				<string>0F1E770842942181A1DA35EFD153CAE8</string>
+				<string>62290BAEC0C5DF117258E05DADB40C42</string>
+				<string>99609D090E0FB6E3605BB935B6A1EB00</string>
+				<string>06863D6E3E3F4262462A79D7ADBA39C2</string>
+				<string>C8FB8D8D2EA5C728ABE45D5C6ADEDE32</string>
+				<string>D678D876DDB06CDF9631909CBA2BA9A1</string>
+				<string>49DC6D569A804E17A439243D9234FA14</string>
+				<string>45A51640C19076AC7CEBD84F961019EF</string>
+				<string>E7D4F98D9EE8ABEBEBDB572270089367</string>
+				<string>50B9DB8AC1FCADB6D1715660F5DD1547</string>
+				<string>B0F5B330DE17F849FA582613030C05C0</string>
+				<string>E706FF6081CA9FB53614F4DA441B3029</string>
+				<string>92EE447C789628519988F77D13F04969</string>
+				<string>364116DDFA2C8379795C49F30CDC4617</string>
+				<string>D145A33C3777D2B8B809AC8847F4C618</string>
+				<string>256172E945F14CA71E145C2DB8AAA432</string>
+				<string>A8D5F4DB5DCA73780E90462E0487DEF6</string>
+				<string>AA61B38455F0DFE6F17B941EBBBE1201</string>
+				<string>B461EBB30AD6001F20064969F7055D89</string>
+				<string>43F01071C5A15BC175760C4A4E995D90</string>
+				<string>2C2CDE421647DDF56861A00EDA7E4047</string>
+				<string>FBB8F68D97EA0A043504AA41A6416259</string>
+				<string>4D6C9ACAC5E4276B9308915733FA6B25</string>
+				<string>F4A2100A1DE23054781460CB52150E34</string>
+				<string>A4E01EF1F8D63B952B43EB9C5A322516</string>
+				<string>46F6DD8235E877D90655D836E88ABB0D</string>
+				<string>3733F66BB533C45B3D6CB451C1299C87</string>
+				<string>7FD2D5EBE4F502ACA0E33AEC5E92A2DF</string>
+				<string>7CDE0E3A071EE2046A2BBA623975BEB9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Realm</string>
+			<key>path</key>
+			<string>Realm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A18C21853CB132ABA0BE6FEF13378FE0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>50B9DB8AC1FCADB6D1715660F5DD1547</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A3354E3531E5DF7603D2791ACE685A23</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7C7C889708CAB542E750E24331CE107C</string>
+			<key>buildPhases</key>
+			<array>
+				<string>C34BC8941EF54FEC92327C49339E9E70</string>
+				<string>A51AF59AE91D8DF73EFD3DE97E1E505C</string>
+				<string>5F8295F25B0C144ECB1D0C9C6830D7CA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>23643D0F0AB7C13BE0C05507F9EED333</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>RealmSwift</string>
+			<key>productName</key>
+			<string>RealmSwift</string>
+			<key>productReference</key>
+			<string>22D356799FACF818A4AB30C366420EBB</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>A3362DF61B032E15A0331ED770EDFB11</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Results.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Results.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A3A047BD9A8406572CF07BBE0EDA707F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C1AF8F7796FC3A6BC25F5D19886FC538</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>A4E01EF1F8D63B952B43EB9C5A322516</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>shared_realm.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/shared_realm.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A51AF59AE91D8DF73EFD3DE97E1E505C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>3C3728870B2A6A2A503EC2A3858C86E3</string>
+				<string>44AFC63CDAD02EB752DF5077B35E700F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A5F37816EC507DCAE57BD077C0EAD01E</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>056A17BB43A5C8839F0F5A44FBDB2BAA</string>
+				<string>94142A2042FECF4B6252F9DFF7056D34</string>
+				<string>B242B48AD3DEB98E0F8A77BF8B78EB7E</string>
+				<string>D07314D4B7CC1A06AE81C44171F6DC55</string>
+				<string>F74AC50F3EB6BA3FD916987A275C2219</string>
+				<string>54D397EF2ACF778DB24B78B41DD0C2B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/SWXMLHash</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A6272C89862551E9493C1D3E7D0B8F27</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A4E01EF1F8D63B952B43EB9C5A322516</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>A70CDAD61F90AC503C7D04CC22DA2923</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>A8D5F4DB5DCA73780E90462E0487DEF6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMResults.mm</string>
+			<key>path</key>
+			<string>Realm/RLMResults.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA61B38455F0DFE6F17B941EBBBE1201</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMResults_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMResults_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AAD4594A11CBE5099FFD14680BC12A91</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5263E38D4298EF282086229880CA4121</string>
+				<string>51733C97D44BD9B3ECB2A39F8A65E796</string>
+				<string>8F02E38255AD77025AE0135588037E15</string>
+				<string>B72324D52CC483088A9AE5653BBF3F99</string>
+				<string>427AAD18127B2B19877326C3D03DC27D</string>
+				<string>EC2C091848B440C6F9DFC5838CE56BC5</string>
+				<string>2BDF18C2AF1DF8D8BCD2B31D0F8A8A5E</string>
+				<string>D055E383103D7D8780710BC0E7724C40</string>
+				<string>FE0423BEFD5F8E94921E18BB78E7C9CE</string>
+				<string>61A48ADD06618F0B909FDB1BE321F0A1</string>
+				<string>0104D01CF6E80DB738E546BAA60291E6</string>
+				<string>A3362DF61B032E15A0331ED770EDFB11</string>
+				<string>31C22DAAAAE6D4AF9C1169F9A2D45F52</string>
+				<string>AE0612D5E1C3529429444AB372C56DCC</string>
+				<string>AD71ED418FF08152CB137A3850373561</string>
+				<string>9875EC0AE20A3BB3189A17D33FB106C1</string>
+				<string>CF8F647770B56AC13E78A5829F1F3D5B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>RealmSwift</string>
+			<key>path</key>
+			<string>RealmSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB4BD68E35061FD4EAEBFE57D4EE9CA8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>async_query.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/impl/async_query.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AB87A5B3534F6CB6DB15778AF3DC5DD6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4D6C9ACAC5E4276B9308915733FA6B25</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>AD71ED418FF08152CB137A3850373561</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SwiftVersion.swift</string>
+			<key>path</key>
+			<string>RealmSwift/SwiftVersion.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>ADDF41E8A4E136A926AC15FEECB45BA2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Realm.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AE0612D5E1C3529429444AB372C56DCC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>SortDescriptor.swift</string>
+			<key>path</key>
+			<string>RealmSwift/SortDescriptor.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF089B03F8F2504B0F9233D5DEB24AB0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>index_set.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/index_set.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AF27EAEB52B012F0A3C6F51AE67E179F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RealmSwift-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B0EDE4671409A1B186B1EFF42431D85F</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Realm.framework</string>
+			<key>path</key>
+			<string>Realm.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B0F5B330DE17F849FA582613030C05C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMQueryUtil.mm</string>
+			<key>path</key>
+			<string>Realm/RLMQueryUtil.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B242B48AD3DEB98E0F8A77BF8B78EB7E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>SWXMLHash.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B29D4F004A98C9B8EB224962EC2F4138</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B4452EFD794964C322AD112CA5CB59A5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>16528594B61BA7EFCB229EF1A59F4533</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B461EBB30AD6001F20064969F7055D89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMSchema.mm</string>
+			<key>path</key>
+			<string>Realm/RLMSchema.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B53F7CC82F35530C976058949239862B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>SWXMLHash</string>
+			<key>target</key>
+			<string>6876F3A40BDDC5A8B486DB2BCCC3DD49</string>
+			<key>targetProxy</key>
+			<string>C35F581B4C25DB65FBA3146CA58F8AED</string>
+		</dict>
+		<key>B6B137715FBDDBCDE655429A407550E8</key>
+		<dict>
+			<key>fileRef</key>
+			<string>67DD38F0815210721650A3FAEF0EC489</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B6D7BF9207BCA0D85923D7EF681319E4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>066A647EDAFF4F08B78716DAA3244280</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B72324D52CC483088A9AE5653BBF3F99</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Migration.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Migration.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BD3842A229ECA47FD7F0E749FD2591F0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4172FDC1B192B02877B6B93FC4B5DAB4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BE8023CEA9F20AABC80E670BE3775394</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>85E65686E94B1A26B3D155A2F10BF6B9</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/RealmSwift/RealmSwift-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/RealmSwift/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/RealmSwift/RealmSwift.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>RealmSwift</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>BF8E20F958C01CBFF8EB47F94800FDFC</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9229FC19094E8AB6CC3985BCBEC4F098</string>
+				<string>493153CA3A918B914243D8845251189A</string>
+				<string>035711F908E87E2EF2F546D46AED0585</string>
+				<string>806968C78F7BA494BA6936D8DC8ED10D</string>
+				<string>1399780A44486E95383BB69AC349FADF</string>
+				<string>DD605581D1573E23910C529A6F044FF2</string>
+				<string>F2707B7E669B52D6A4B9C95178615C5A</string>
+				<string>00B8538C08E7C7220F7F3126BAED7384</string>
+				<string>5B47BA4183B281017EA49AE18C2EAD72</string>
+				<string>74E0891980B2915CE1A41472288BB681</string>
+				<string>E58891D73D97F08BA0F0365EAED42B18</string>
+				<string>0BD380474CF4431B5C40C25D1002764B</string>
+				<string>764EA8CA8ACA11F10EAC99C374A5FBED</string>
+				<string>80B9AC0A17DAD79F38D11CA03187F4A8</string>
+				<string>9BC702A2A069BDF88F6EEF177E839EEA</string>
+				<string>390D11C9E16A334395A4E5E382F9E4C3</string>
+				<string>A3A047BD9A8406572CF07BBE0EDA707F</string>
+				<string>3ABD3BDBDCE3258DC223156FE183E566</string>
+				<string>2A7B7CCD40D150A8F5D27531F990F65A</string>
+				<string>4888B3AD4E40D5F53F885F16F74A111B</string>
+				<string>E4F729046DA229F8B939210F830E8A01</string>
+				<string>C752001C7F4AC54981817B663B4B1EE7</string>
+				<string>772D5E3E3EE7A1DFD5F4B69807F0DA41</string>
+				<string>E39D0538D95AB5C2CEC6B027B44CF542</string>
+				<string>0085FCB5E624DC7BB8836972DA80D78E</string>
+				<string>2E1A2E4AE004E3F81C95A27483C7E584</string>
+				<string>27636E93BF93249D36342042C41B27F4</string>
+				<string>92FC398EB2A151F9E69E6B31A08A0F57</string>
+				<string>6744C39013BD490658C92CE3DDD9A0A1</string>
+				<string>6227142556B08F1CF2E40B0BF92BC6F2</string>
+				<string>7E76135C109DF8D3D2F9A4A6DA3AEEB4</string>
+				<string>83300C063AC5FECC1B8B4FF502322A77</string>
+				<string>AB87A5B3534F6CB6DB15778AF3DC5DD6</string>
+				<string>829B4271F51C1A7865A07DBC85EE9E70</string>
+				<string>A6272C89862551E9493C1D3E7D0B8F27</string>
+				<string>63CD1F9E91A0D2B9B41D2DE846F324FC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>BFA8D92946F670DBA546CC0ED34EB4A4</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_Cleverdiet.framework</string>
+			<key>path</key>
+			<string>Pods_Cleverdiet.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>C02D2CB48DC3A5BF1301F63FCDD87114</key>
+		<dict>
+			<key>fileRef</key>
+			<string>427AAD18127B2B19877326C3D03DC27D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C07C6949E8F81F94FD1A55A3F8E1D76F</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>FB8FF779577951755AC3020F1CA03BEA</string>
+				<string>114E4EFCA1FF581D225DB9F7A44292A0</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>C1AF8F7796FC3A6BC25F5D19886FC538</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMObject.mm</string>
+			<key>path</key>
+			<string>Realm/RLMObject.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C34BC8941EF54FEC92327C49339E9E70</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2F27BFAF643088EF84C492744008E67F</string>
+				<string>D1D1B22355DCC8AD14484B7FCF5B610E</string>
+				<string>E2BD53E6220E7C082F8B0CFA61CF1538</string>
+				<string>D7193827F23A6D39C7E42976ACA8DB9D</string>
+				<string>C02D2CB48DC3A5BF1301F63FCDD87114</string>
+				<string>9B0DB1D9028003174FFF3B86F63BB93C</string>
+				<string>60446BCD08703C188112A47674A91C16</string>
+				<string>772816C3BDA97B2D667C50AC54A01B39</string>
+				<string>388A89569924830BF4BF8D0DBF16B71E</string>
+				<string>FDA3E24678C2EB2ADF3032112999703D</string>
+				<string>559C7AC32F83222507D0EB2B059DD414</string>
+				<string>E36270FE568047B5C3D12449D8914F55</string>
+				<string>7308CAC698688CA0438A7E090EF88A7B</string>
+				<string>51C7F95EC16F1013C56A0493DBD7040E</string>
+				<string>6AEE1AD2BF4EB79B1F443B84DA66B30C</string>
+				<string>5C13187831C647CF1BB517207815A110</string>
+				<string>DBEFCB9864F2ACD499504219F04F4B33</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>C35F581B4C25DB65FBA3146CA58F8AED</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>6876F3A40BDDC5A8B486DB2BCCC3DD49</string>
+			<key>remoteInfo</key>
+			<string>SWXMLHash</string>
+		</dict>
+		<key>C41E3EE470D5CF524CE0C4A338B4667F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>58A2216188D2FEC6E2A56C5F57DB308C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C658F473F27E7719F0D5AF994FD14320</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BFA8D92946F670DBA546CC0ED34EB4A4</string>
+				<string>B0EDE4671409A1B186B1EFF42431D85F</string>
+				<string>22D356799FACF818A4AB30C366420EBB</string>
+				<string>334A50AFDF00D7988F22D156ADD7BC0D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C688654BCB41F06EE3256F0FBD926C06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMProperty.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMProperty.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C752001C7F4AC54981817B663B4B1EE7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>49DC6D569A804E17A439243D9234FA14</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>C786B59E07B1F1F87686E00EC00E988F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Realm-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C7E89D93766319A363949717D00D5951</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMAnalytics.mm</string>
+			<key>path</key>
+			<string>Realm/RLMAnalytics.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>C8FB8D8D2EA5C728ABE45D5C6ADEDE32</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMObservation.mm</string>
+			<key>path</key>
+			<string>Realm/RLMObservation.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CE712CD2E5CF93317D49FEF8D7E1C774</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>DE94FB254B473AE091B7CEB5B840B81E</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-Cleverdiet/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-Cleverdiet/Pods-Cleverdiet.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_Cleverdiet</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>CF7A105C84A21B2192C22780EB935C62</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMAccessor.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMAccessor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CF8F647770B56AC13E78A5829F1F3D5B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>669D6C6EF3BF87BEAAB29ABBAE182B78</string>
+				<string>9028534673FCA89393D5D2A052AE2AB4</string>
+				<string>85E65686E94B1A26B3D155A2F10BF6B9</string>
+				<string>AF27EAEB52B012F0A3C6F51AE67E179F</string>
+				<string>5E3477AB1F98B14134E65C894192858F</string>
+				<string>911139375EA22229BDB12BB3C134E0B7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>../Target Support Files/RealmSwift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D055E383103D7D8780710BC0E7724C40</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Property.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Property.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D07314D4B7CC1A06AE81C44171F6DC55</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SWXMLHash-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D090A854FDF51FDC06FE30B2C8B302BC</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMObjectBase_Dynamic.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMObjectBase_Dynamic.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D145A33C3777D2B8B809AC8847F4C618</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMRealmConfiguration_Private.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMRealmConfiguration_Private.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D1D1B22355DCC8AD14484B7FCF5B610E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>51733C97D44BD9B3ECB2A39F8A65E796</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>C658F473F27E7719F0D5AF994FD14320</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3B5A2043AF1B8D44800208DBE2F1DBF2</string>
+				<string>4DEC65B3CE55029592F6C66799A091EC</string>
+				<string>A3354E3531E5DF7603D2791ACE685A23</string>
+				<string>6876F3A40BDDC5A8B486DB2BCCC3DD49</string>
+			</array>
+		</dict>
+		<key>D678D876DDB06CDF9631909CBA2BA9A1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMOptionalBase.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMOptionalBase.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D7193827F23A6D39C7E42976ACA8DB9D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B72324D52CC483088A9AE5653BBF3F99</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D944BE0D9753D5F4A28C8056EACCE044</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMObjectBase.mm</string>
+			<key>path</key>
+			<string>Realm/RLMObjectBase.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DA858B65908D721F75DC19BA9A74168A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>realm_coordinator.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/impl/realm_coordinator.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>DB393724AB359AD3441DBEAF0FBD0C64</key>
+		<dict>
+			<key>fileRef</key>
+			<string>911139375EA22229BDB12BB3C134E0B7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DB3CBDA0BAFC817A0DA167DB3FDC783F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F69AA0AA6B56BD8D33D9795988BBD817</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DBBAA28614FB00FB4888FACCF447ABAC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>88552F162913DCFAEBF22D82DB8D1E9F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>DBEFCB9864F2ACD499504219F04F4B33</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9875EC0AE20A3BB3189A17D33FB106C1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>DD605581D1573E23910C529A6F044FF2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>63AF5BCF8D99E58995BA507B4558D02C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>DE94FB254B473AE091B7CEB5B840B81E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E2BD53E6220E7C082F8B0CFA61CF1538</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8F02E38255AD77025AE0135588037E15</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E2F4786390C9DA4F9C9E612069A0BCBB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C688654BCB41F06EE3256F0FBD926C06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E36270FE568047B5C3D12449D8914F55</key>
+		<dict>
+			<key>fileRef</key>
+			<string>AF27EAEB52B012F0A3C6F51AE67E179F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>E39D0538D95AB5C2CEC6B027B44CF542</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E7D4F98D9EE8ABEBEBDB572270089367</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>E39D616FC415DF8D183AF06EB03FC0B5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-Cleverdiet-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E4F729046DA229F8B939210F830E8A01</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C8FB8D8D2EA5C728ABE45D5C6ADEDE32</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>E58891D73D97F08BA0F0365EAED42B18</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C7E89D93766319A363949717D00D5951</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>COMPILER_FLAGS</key>
+				<string>-DREALM_HAVE_CONFIG -DREALM_COCOA_VERSION='@"0.98.7"' -D__ASSERTMACROS__</string>
+			</dict>
+		</dict>
+		<key>E706FF6081CA9FB53614F4DA441B3029</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMRealm.mm</string>
+			<key>path</key>
+			<string>Realm/RLMRealm.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7862C1976EACDF9D7D8D03C8476204F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMArray.mm</string>
+			<key>path</key>
+			<string>Realm/RLMArray.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E7D4F98D9EE8ABEBEBDB572270089367</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMProperty.mm</string>
+			<key>path</key>
+			<string>Realm/RLMProperty.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E90FD35A1A1CC0DD8FA51B53BF89119B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>62290BAEC0C5DF117258E05DADB40C42</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>EC2C06C32C4F57A6CDBE2847A1DF4D87</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3056258FD0C38D6DCC75B798FA2ABDAC</string>
+				<string>4F8F03BD249BA1FF902FD01AE81ABAEE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC2C091848B440C6F9DFC5838CE56BC5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>ObjectSchema.swift</string>
+			<key>path</key>
+			<string>RealmSwift/ObjectSchema.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EC2E65C8A73030E2CBB560AFC4AA1AC6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7B2FB5C548C840C7B64D4E8E0CEA988E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>ECC907F24A60653177FBD411468A7375</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D678D876DDB06CDF9631909CBA2BA9A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F03348AFE8A3B1F79839678DF340204C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9642C1277F90A05B844B213B3A46B012</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F165D99755D1DFED6F7FD86A2E9006C6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6C43A0256A6E2D53006BA7EBBE7066F0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F2707B7E669B52D6A4B9C95178615C5A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>C786B59E07B1F1F87686E00EC00E988F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F3B966640A5EB6C37D8B98CEA9B183C6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>98CE8A6B7424D89031096BE43A2D51F4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F4A2100A1DE23054781460CB52150E34</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>schema.cpp</string>
+			<key>path</key>
+			<string>Realm/ObjectStore/schema.cpp</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5A86E46BA6B20CEA5934954F3585434</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E6827496535CDFF9B5FFFCCEA463B34</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Private</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F69AA0AA6B56BD8D33D9795988BBD817</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RLMArray.h</string>
+			<key>path</key>
+			<string>include/Realm/RLMArray.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7080BECC26DA9F30744214CA42EAEA6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6FA1DCB73C67F1CE2090B7B40692794A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F74AC50F3EB6BA3FD916987A275C2219</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SWXMLHash-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7B9E60D701A0932C6774EC3079E739A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3B7D58049DA1CB9DCE0BF461A03A55AF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FB45FFD90572718D82AB9092B750F0CA</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>FB8FF779577951755AC3020F1CA03BEA</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>ADDF41E8A4E136A926AC15FEECB45BA2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/Realm/Realm-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Realm/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Realm/Realm.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>Realm</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>FBB2DC00FBD38B2DD6133B562F332314</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>A3354E3531E5DF7603D2791ACE685A23</string>
+			<key>remoteInfo</key>
+			<string>RealmSwift</string>
+		</dict>
+		<key>FBB8F68D97EA0A043504AA41A6416259</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>RLMUpdateChecker.mm</string>
+			<key>path</key>
+			<string>Realm/RLMUpdateChecker.mm</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDA3E24678C2EB2ADF3032112999703D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>61A48ADD06618F0B909FDB1BE321F0A1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FE0423BEFD5F8E94921E18BB78E7C9CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>name</key>
+			<string>Realm.swift</string>
+			<key>path</key>
+			<string>RealmSwift/Realm.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

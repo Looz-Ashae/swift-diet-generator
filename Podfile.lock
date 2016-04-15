@@ -1,23 +1,18 @@
->-
-  PODS:
-  - >-
-    SWXMLHash (2.1.0)
+PODS:
+  - Realm (0.98.7):
+    - Realm/Headers (= 0.98.7)
+  - Realm/Headers (0.98.7)
+  - RealmSwift (0.98.7):
+    - Realm (= 0.98.7)
+  - SWXMLHash (2.1.0)
 
->-
-  DEPENDENCIES:
-  - >-
-    SWXMLHash (~> 2.1.0)
+DEPENDENCIES:
+  - RealmSwift
+  - SWXMLHash (~> 2.1.0)
 
->-
-  SPEC CHECKSUMS:
-  >-
-    SWXMLHash: >-
-    7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
+SPEC CHECKSUMS:
+  Realm: 46df2178359b6b57812e6cf957956febaba513a5
+  RealmSwift: 3056e6d7ad30ed50dd866185a615fccea73db5f5
+  SWXMLHash: 7257a358b3ab2f7a209e0b4e4cf552e8b6df5f0f
 
->-
-  PODFILE CHECKSUM: >-
-  63cab4a3e5c00fea927105e0e3cf4acb9e4c28bc
-
->-
-  COCOAPODS: >-
-  1.0.0.beta.4
+COCOAPODS: 0.39.0
