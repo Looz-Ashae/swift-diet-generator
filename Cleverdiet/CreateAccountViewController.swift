@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class CreateAccountViewController: UIViewController {
     @IBOutlet weak var usernameTextField: UITextField!
@@ -23,6 +24,8 @@ class CreateAccountViewController: UIViewController {
                 UserManager.sharedInstance.currentUser = UserDataLoader.downloadFromDatabase(usernameTextField.text!)
                 goToDietsView()
             }
+        } else {
+            showMessageErrorAndHideKeyboard()
         }
     }
     
@@ -46,6 +49,11 @@ class CreateAccountViewController: UIViewController {
             !(heightTextField.text?.isEmpty)! &&
             !(weightTextField.text?.isEmpty)! &&
             !(fatPercentageTextField.text?.isEmpty)!
+    }
+    
+    func showMessageErrorAndHideKeyboard() {
+        SCLAlertView().showError("Wooo!", subTitle: "It seems like you have not introduced all information. Can you take a look?")
+        view.endEditing(true)
     }
 
 }

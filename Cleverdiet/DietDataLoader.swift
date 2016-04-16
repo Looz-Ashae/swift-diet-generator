@@ -19,10 +19,10 @@ class DietDataLoader: NSObject {
         }
     }
     
-    class func downloadFromDatabase()-> [Diet]? {
+    class func downloadFromDatabase(user : User)-> [Diet]? {
         do {
             let realm = try Realm()
-            return Array(realm.objects(Diet));
+            return Array(realm.objects(Diet).filter("username = '\(user.name)'"));
         } catch {
             return nil
         }

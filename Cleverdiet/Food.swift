@@ -22,6 +22,12 @@ class Food : Object, XMLSerializable {
             return "\(name) (\(servingInGrams)gr, \(caloriesPerServing)kcal)"
         }
     }
+    
+    var information: String {
+        get {
+            return "(\(servingInGrams)gr, \(caloriesPerServing)kcal)\nProteins = \(proteinsPerServing)gr \nCarbohydrates = \(carbohydratesPerServing)gr \nFats = \(fatsPerServing)gr"
+        }
+    }
 
     convenience required init(name: String, caloriesPerServing: Double, servingInGrams: Double, proteinsPerServing: Double, fatsPerServing: Double, carbohydratesPerServing: Double, quantity: Double) {
         self.init()

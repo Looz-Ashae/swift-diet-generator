@@ -17,6 +17,7 @@ final class DietGenerator: NSObject {
     private class func generateWeightLossDiet(user : User, withName: String)-> Diet {
         let diet = Diet()
         diet.name = withName
+        diet.username = user.name
         var dietCalories = 0.0
         while (dietCalories < user.dailyNutritionalData!.neededCaloriesForWeightLoss) {
             let food = FoodDataLoader.downloadFromDatabase(DietDataAttribute.Id, dataText: String(Int(arc4random_uniform(UInt32(FoodDataLoader.countElements())) + 1)))!
@@ -31,6 +32,7 @@ final class DietGenerator: NSObject {
     private class func generateMaintenanceDiet(user : User, withName: String)-> Diet {
         let diet = Diet()
         diet.name = withName
+        diet.username = user.name
         var dietCalories = 0.0
         while (dietCalories < user.dailyNutritionalData!.neededCalories) {
             let food = FoodDataLoader.downloadFromDatabase(DietDataAttribute.Id, dataText: String(Int(arc4random_uniform(UInt32(FoodDataLoader.countElements())) + 1)))!

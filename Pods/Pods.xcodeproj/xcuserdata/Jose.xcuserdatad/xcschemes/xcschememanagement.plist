@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SCLAlertView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SWXMLHash.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -27,22 +32,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3B5A2043AF1B8D44800208DBE2F1DBF2</key>
+		<key>A90D448EE9626747F4A0C6631702E5FF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4DEC65B3CE55029592F6C66799A091EC</key>
+		<key>AFA9EF21413C3141AA2709A4EDC6CD07</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6876F3A40BDDC5A8B486DB2BCCC3DD49</key>
+		<key>B4A38DDB9832F73B017DE08F4059EAE5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A3354E3531E5DF7603D2791ACE685A23</key>
+		<key>BE9810038D66577691908F6931798328</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E65D3EA97C2BFCFF670A0AC6DA44E6B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

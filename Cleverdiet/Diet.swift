@@ -10,6 +10,7 @@ import RealmSwift
 
 class Diet : Object {
     dynamic var name: String?
+    dynamic var username: String?
     var foods : List<Food> = List()
     
     override var description: String {
@@ -22,9 +23,10 @@ class Diet : Object {
         }
     }
     
-    convenience init(name: String, foods : List<Food>) {
+    convenience init(name: String, foods : List<Food>, forUserWithName: String) {
         self.init()
         self.name = name
+        self.username = forUserWithName
         self.foods = foods
     }
 

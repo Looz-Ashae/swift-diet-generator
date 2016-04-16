@@ -20,7 +20,7 @@ class MyDietsViewController: UITableViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        diets = DietDataLoader.downloadFromDatabase()!
+        diets = DietDataLoader.downloadFromDatabase(UserManager.sharedInstance.currentUser!)!
         tableView.reloadData()
     }
     
@@ -35,12 +35,13 @@ class MyDietsViewController: UITableViewController {
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        let svc = segue.destinationViewController as! DietViewController;
         if (segue.identifier == "OpenDiet") {
+            let svc = segue.destinationViewController as! DietViewController;
             if let indexPath = self.tableView.indexPathForSelectedRow?.row {
                 svc.diet = diets[indexPath]
             }
         } else if (segue.identifier == "GenerateNewDiet") {
+            let svc = segue.destinationViewController as! DietViewController;
             let dateFormatter: NSDateFormatter = NSDateFormatter()
             dateFormatter.dateFormat = "dd/MM/yyyy HH:mm:ss"
             svc.diet = DietGenerator.generateFor(UserManager.sharedInstance.currentUser!, withName: "Dieta del día \(dateFormatter.stringFromDate(NSDate()))")

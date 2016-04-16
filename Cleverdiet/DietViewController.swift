@@ -7,13 +7,13 @@
 //
 
 import UIKit
+import SCLAlertView
 
 class DietViewController: UITableViewController {
     var diet : Diet = Diet()
     var sections = [String]()
     
     @IBAction func shareDiet(sender: AnyObject) {
-        
         let activityViewController = UIActivityViewController(activityItems: [diet.description as NSString], applicationActivities: nil)
         presentViewController(activityViewController, animated: true, completion: {})
     }
@@ -52,10 +52,19 @@ class DietViewController: UITableViewController {
         return self.sections[section]
     }
     
+    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+        let index = (self.diet.foods.count / self.sections.count) * indexPath.section + indexPath.row
+        showFoodDetailInformationForFood(diet.foods[index])
+    }
+    
     private func calculateSections() {
         let sectionsNumber = (diet.foods.count > 15) ? 6 : 5
         for i in 1 ..< sectionsNumber {
             sections.append("Food \(i)")
         }
+    }
+    
+    func showFoodDetailInformationForFood(food: Food) {
+        SCLAlertView().showInfo(food.name, subTitle: food.information)
     }
 }

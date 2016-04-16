@@ -39,6 +39,51 @@ final class UserDataLoader: NSObject {
             return false
         }
     }
+    
+    class func deleteUser(user : User)-> Bool {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                realm.delete(user)
+            }
+            return true
+        } catch {
+            return false
+        }
+    }
+    
+    class func updateUserInformationForUserWithName(name : String, height: Double, weight: Double, fat: Double)-> Bool {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                for user in realm.objects(User).filter("name = '\(name)'") {
+                    user.fat = fat
+                    user.height = height
+                    user.weight = weight
+                }
+            }
+            return true
+        } catch {
+            return false
+        }
+    }
+    
+    class func updateUserInformationForUserWithName(name : String, height: Double, weight: Double, fat: Double, password: String)-> Bool {
+        do {
+            let realm = try Realm()
+            try realm.write {
+                for user in realm.objects(User).filter("name = '\(name)'") {
+                    user.fat = fat
+                    user.height = height
+                    user.weight = weight
+                    user.password = password
+                }
+            }
+            return true
+        } catch {
+            return false
+        }
+    }
 }
 
 enum UserDataAttribute: String {

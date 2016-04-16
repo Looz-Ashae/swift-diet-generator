@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4C3BA7689BCBF59D716ACE3D /* Pods_Cleverdiet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CD2CAD5EDBD3E2DC69F2F65 /* Pods_Cleverdiet.framework */; };
+		822B85271CC17E8B005CBED6 /* MyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822B85261CC17E8B005CBED6 /* MyProfileViewController.swift */; };
 		82333F121C9181CF008413BF /* CaloricalNeedsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82333F111C9181CF008413BF /* CaloricalNeedsCalculator.swift */; };
 		82333F161C918901008413BF /* DietGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82333F151C918901008413BF /* DietGenerator.swift */; };
 		823AC99B1C90464400AC4257 /* DietDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823AC99A1C90464400AC4257 /* DietDataLoader.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		2CD2CAD5EDBD3E2DC69F2F65 /* Pods_Cleverdiet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cleverdiet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		822B85261CC17E8B005CBED6 /* MyProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyProfileViewController.swift; sourceTree = "<group>"; };
 		82333F111C9181CF008413BF /* CaloricalNeedsCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaloricalNeedsCalculator.swift; sourceTree = "<group>"; };
 		82333F151C918901008413BF /* DietGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietGenerator.swift; sourceTree = "<group>"; };
 		823AC99A1C90464400AC4257 /* DietDataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DietDataLoader.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				823AC99D1C905DDC00AC4257 /* MyDietsViewController.swift */,
 				82D26F1E1C90864A002DF5EE /* DietViewController.swift */,
 				82F715F71C948C2C0013ED4A /* CreateAccountViewController.swift */,
+				822B85261CC17E8B005CBED6 /* MyProfileViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				82F715F81C948C2C0013ED4A /* CreateAccountViewController.swift in Sources */,
 				824AFC2A1C8F87F700A12A43 /* UserDataLoader.swift in Sources */,
 				824AFC1E1C8F821100A12A43 /* Food.swift in Sources */,
+				822B85271CC17E8B005CBED6 /* MyProfileViewController.swift in Sources */,
 				82D26F1F1C90864A002DF5EE /* DietViewController.swift in Sources */,
 				82D26F211C908692002DF5EE /* FoodTableViewCell.swift in Sources */,
 				823AC99E1C905DDC00AC4257 /* MyDietsViewController.swift in Sources */,
