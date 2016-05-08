@@ -187,8 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				824AFC291C8F87F700A12A43 /* UserDataLoader.swift */,
-				824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */,
 				823AC99A1C90464400AC4257 /* DietDataLoader.swift */,
+				824AFC2D1C8F8D3900A12A43 /* FoodDataLoader.swift */,
 			);
 			name = Loaders;
 			sourceTree = "<group>";
